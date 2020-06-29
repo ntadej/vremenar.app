@@ -1,0 +1,40 @@
+.navbar
+  .logo
+    float: left
+    width: 56px
+    height: 28px
+    margin-right: 12px
+
+    +background("logo/white.png", "no-repeat center")
+
+    +retina
+      +background-image("logo/white@2x.png")
+
+      background-size: 56px 28px
+
+.logo-huge
+  margin: 0 auto
+  width: 300px
+
+  +background("logo/huge.png", "no-repeat center")
+
+  &:after
+    padding-top: 60%
+    display: block
+    content: ""
+
+  +retina
+    +background-image("logo/huge@2x.png")
+
+    background-size: 300px 150px
+
+
+  +mobile
+    width: 200px
+
+    +background-image("logo/huge-mobile.png")
+
+    +retina
+      +background-image("logo/huge-mobile@2x.png")
+
+      background-size: 200px 100px
