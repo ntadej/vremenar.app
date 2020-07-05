@@ -8,7 +8,7 @@
     "serve": "NODE_ENV=production node index.js"
   },
   "dependencies": {
-    "@tano/common": "0.2.0",
+    "@tano/common": "ntadej/tano-style#next",
     "express": "^4.17.1",
     "next": "^9.4.0",
     "next-i18next": "^4.5.0",
