@@ -1,28 +1,53 @@
-import { FunctionComponent } from 'react'
-import { Link } from '@tano/common'
+import { FunctionComponent, createRef } from 'react'
+import Link from 'next/link'
+import i18n from 'i18n'
 import NavItems from 'components/NavItems'
 
-const Navigation: FunctionComponent = () => (
-  <nav className="navbar navbar-primary is-primary" role="navigation" aria-label="main navigation">
-    <div className="container">
-      <div className="navbar-brand">
-        <Link href="/">
-          <a className="navbar-item is-brand"></a>
-        </Link>
+const Navigation: FunctionComponent = () => {
+  let burger = createRef<HTMLDivElement>()
+  let nav = createRef<HTMLDivElement>()
 
-        <div className="burger navbar-burger">
-          <span></span>
-          <span></span>
-          <span></span>
+  function burgerClicked() {
+    if (burger.current) {
+      burger.current.classList.toggle('is-active')
+    }
+    if (nav.current) {
+      nav.current.classList.toggle('is-active')
+    }
+  }
+
+  function toggleLocale() {
+    i18n.i18n.changeLanguage(i18n.i18n.language === 'en' ? 'sl' : 'en')
+  }
+
+  return (
+    <nav className="navbar navbar-primary is-primary" role="navigation" aria-label="main navigation">
+      <div className="container">
+        <div className="navbar-brand">
+          <i18n.Link href="/">
+            <a className="navbar-item is-brand"></a>
+          </i18n.Link>
+
+          <div ref={burger} className="burger navbar-burger" onClick={burgerClicked}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-      </div>
 
-      <div className="navbar-menu">
-        <NavItems />
-      </div>
+        <div ref={nav} className="navbar-menu">
+          <NavItems />
+        </div>
 
-    </div>
-  </nav>
-)
+        <div className="navbar-end">
+          <a className="navbar-item" onClick={toggleLocale}>
+            Toggle locale
+          </a>
+        </div>
+
+      </div>
+    </nav>
+  )
+}
 
 export default Navigation
