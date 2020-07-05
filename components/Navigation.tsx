@@ -25,7 +25,7 @@ const Navigation: FunctionComponent = () => {
       <div className="container">
         <div className="navbar-brand">
           <i18n.Link href="/">
-            <a className="navbar-item is-brand"></a>
+            <a className="navbar-item is-brand"><span className="logo"></span>Vremenar</a>
           </i18n.Link>
 
           <div ref={burger} className="burger navbar-burger" onClick={burgerClicked}>
