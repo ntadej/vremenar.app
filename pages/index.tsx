@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import { GitHubCorner } from '@tano/common';
+import { HeadSetup, GitHubCorner } from '@tano/common';
 import Footer from 'components/Footer'
 import LocaleDropdown from 'components/LocaleDropdown'
 import i18n from 'i18n'
@@ -9,6 +9,7 @@ interface Props extends WithTranslation { }
 
 const Home: NextPage<Props> = ({ t }) => (
   <div>
+    <HeadSetup title="" siteTitle="Vremenar" siteColor="#FFDB4F" />
     <section id="hero-home" className="hero is-primary is-fullheight has-gradient">
       <GitHubCorner href="https://github.com/ntadej/Vremenar" />
 
