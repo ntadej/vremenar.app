@@ -1,5 +1,4 @@
 import { FunctionComponent, createRef } from 'react'
-import Link from 'next/link'
 import i18n from 'i18n'
 import NavItems from 'components/NavItems'
 
@@ -16,8 +15,8 @@ const Navigation: FunctionComponent = () => {
     }
   }
 
-  function toggleLocale() {
-    i18n.i18n.changeLanguage(i18n.i18n.language === 'en' ? 'sl' : 'en')
+  function toggleLocale(lang: string) {
+    i18n.i18n.changeLanguage(lang)
   }
 
   return (
@@ -40,9 +39,20 @@ const Navigation: FunctionComponent = () => {
         </div>
 
         <div className="navbar-end">
-          <a className="navbar-item" onClick={toggleLocale}>
-            Toggle locale
-          </a>
+          <div className="navbar-item has-dropdown is-hoverable">
+            <a className="navbar-link is-arrowless">
+              {i18n.i18n.language == 'en' ? 'English' : 'Slovenščina'}
+            </a>
+
+            <div className="navbar-dropdown is-right">
+              <a className="navbar-item" onClick={() => toggleLocale('en')}>
+                English
+              </a>
+              <a className="navbar-item" onClick={() => toggleLocale('sl')}>
+                Slovenščina
+              </a>
+            </div>
+          </div>
         </div>
 
       </div>

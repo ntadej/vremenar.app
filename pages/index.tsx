@@ -1,11 +1,20 @@
 import { NextPage } from 'next';
-import Link from 'next/link';
-import { Footer, GitHubCorner } from '@tano/common';
+import { GitHubCorner } from '@tano/common';
+import Footer from 'components/Footer'
+import LocaleDropdown from 'components/LocaleDropdown'
+import i18n from 'i18n'
+import { WithTranslation } from 'next-i18next'
 
-const Home: NextPage = () => (
+interface Props extends WithTranslation { }
+
+const Home: NextPage<Props> = ({ t }) => (
   <div>
     <section id="hero-home" className="hero is-primary is-fullheight has-gradient">
       <GitHubCorner href="https://github.com/ntadej/Vremenar" />
+
+      <div className="hero-head has-text-right">
+        <LocaleDropdown />
+      </div>
 
       <div className="hero-body">
         <div className="container">
@@ -18,19 +27,19 @@ const Home: NextPage = () => (
                 {/* {{site.description}} */}
               </h1>
 
-              <a href="https://github.com/ntadej/Vremenar" className="button is-large is-primary is-inverted">Follow development on GitHub</a>
+              <a href="https://github.com/ntadej/Vremenar" className="button is-large is-primary is-inverted">{t('github')}</a>
 
               <p></p>
 
               <div className="tabs has-text-centered-mobile">
                 <ul>
                   <li>
-                    No stable version yet
+                    {t('no-stable')}
                   </li>
                   <li>
-                    <Link href="/license">
-                      <a>License</a>
-                    </Link>
+                    <i18n.Link href="/license">
+                      <a>{t('license')}</a>
+                    </i18n.Link>
                   </li>
                 </ul>
               </div>
@@ -43,7 +52,7 @@ const Home: NextPage = () => (
         <nav className="tabs">
           <div className="hero-foot-container">
             <ul>
-              <li><a href="#features" className="smooth-scroll"><i className="fa fa-angle-down"></i>&nbsp;Scroll down to learn more (soon!)&nbsp;<i className="fa fa-angle-down"></i></a></li>
+              {/* <li><a href="#features" className="smooth-scroll"><i className="fa fa-angle-down"></i>&nbsp;{t('scroll-for-more')}&nbsp;<i className="fa fa-angle-down"></i></a></li> */}
             </ul>
           </div>
         </nav>
@@ -54,4 +63,8 @@ const Home: NextPage = () => (
   </div>
 );
 
-export default Home;
+Home.getInitialProps = async (): Promise<any> => ({
+  namespacesRequired: ['common']
+})
+
+export default i18n.withTranslation('common')(Home);

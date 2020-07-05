@@ -12,8 +12,4 @@ const ErrorPage: NextPage<Props> = ({ statusCode }) => (
     siteTitle="Vremenar" siteColor="#FFDB4F" />
 );
 
-ErrorPage.getInitialProps = async (): Promise<any> => ({
-  namespacesRequired: ['common']
-})
-
 export default ErrorPage;

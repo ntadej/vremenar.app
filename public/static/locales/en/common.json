@@ -1,3 +1,10 @@
 {
-  "change-locale": "Change locale"
+  "about": "About",
+  "download": "Download",
+  "license": "License",
+  "privacy": "Privacy Policy",
+  "terms": "Terms of Service",
+  "scroll-for-more": "Scroll down to learn more",
+  "no-stable": "No stable version yet",
+  "github": "Follow development on GitHub"
 }

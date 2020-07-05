@@ -6,8 +6,4 @@ const ErrorPage: NextPage = () => (
     siteTitle="Vremenar" siteColor="#FFDB4F" />
 );
 
-ErrorPage.getInitialProps = async (): Promise<any> => ({
-  namespacesRequired: ['common']
-})
-
 export default ErrorPage;
