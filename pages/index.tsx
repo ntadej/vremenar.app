@@ -4,6 +4,7 @@ import Footer from 'components/Footer'
 import LocaleDropdown from 'components/LocaleDropdown'
 import i18n from 'i18n'
 import { WithTranslation } from 'next-i18next'
+import { testingVersion } from '../constants'
 
 interface Props extends WithTranslation { }
 
@@ -24,18 +25,20 @@ const Home: NextPage<Props> = ({ t }) => (
               <div className="logo-huge"></div>
             </div>
             <div className="column has-text-centered-mobile">
-              <h1>
-                {/* {{site.description}} */}
-              </h1>
-
-              <a href="https://github.com/ntadej/Vremenar" className="button is-large is-primary is-inverted">{t('github')}</a>
+              <h1>Vremenar</h1>
+              <i18n.Link href="/download">
+                <a className="button is-large is-primary is-inverted">{t('download')} v{testingVersion}</a>
+              </i18n.Link>
 
               <p></p>
 
               <div className="tabs has-text-centered-mobile">
                 <ul>
-                  <li>
+                  {/* <li>
                     {t('no-stable')}
+                  </li> */}
+                  <li>
+                    <a href="https://github.com/ntadej/Vremenar">{t('github')}</a>
                   </li>
                   <li>
                     <i18n.Link href="/license">

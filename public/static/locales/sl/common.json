@@ -1,6 +1,8 @@
 {
   "about": "O programu",
   "download": "Prenesi",
+  "download-platform": "Izberi svojo platformo",
+  "download-experimental": "Podpora za iOS in Linux je eksperimentalna.",
   "license": "Licenca",
   "privacy": "Politika zasebnosti",
   "terms": "Pogoji uporabe",
