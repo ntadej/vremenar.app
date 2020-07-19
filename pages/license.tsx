@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import i18n from 'i18n'
 import Layout from 'components/Layout'
 import { Section } from '@tano/common'
 
@@ -23,12 +24,12 @@ const License: NextPage = () => (
       <p>This program is distributed in the hope that it will be useful,
       but WITHOUT ANY WARRANTY; without even the implied warranty of
       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-      See the GNU General Public License for more details.</p>
+      See the <i18n.Link href="/license/gpl"><a>GNU General Public License</a></i18n.Link> for more details.</p>
 
       <h2>Mozilla Public License Version 2.0</h2>
 
       <p>This Source Code Form is subject to the terms of the
-        Mozilla Public License, v. 2.0, available here.</p>
+        Mozilla Public License, v. 2.0, available <i18n.Link href="/license/mpl"><a>here</a></i18n.Link>.</p>
 
       <h2>Note on the Copyright Notices</h2>
 
@@ -37,7 +38,7 @@ const License: NextPage = () => (
       <pre>SPDX - License - Identifier: (GPL - 3.0 - or - later AND MPL - 2.0)</pre>
 
       <p>This enables machine processing of license information based on the
-        SPDX License Identifiers that are available here: http://spdx.org/licenses</p>
+        SPDX License Identifiers that are available here: <a href="http://spdx.org/licenses">http://spdx.org/licenses</a></p>
     </Section>
   </Layout >
 )
