@@ -7,11 +7,11 @@ interface Props extends WithTranslation { }
 
 const NavItems: FunctionComponent<Props> = ({ t }) => (
   <div className="navbar-start">
-    <Link href="/about">
+    {/* <Link href="/about">
       <a className="navbar-item">
         {t('about')}
       </a>
-    </Link>
+    </Link> */}
     <Link href="/download">
       <a className="navbar-item">
         {t('download')}

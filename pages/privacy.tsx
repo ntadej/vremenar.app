@@ -7,9 +7,10 @@ import { WithTranslation } from 'next-i18next'
 interface Props extends WithTranslation { }
 
 const Privacy: NextPage<Props> = ({ t }) => (
-  <Layout title={t('privacy-policy')}>
-    <Section title={t('privacy-policy')} subtitle="">
-
+  <Layout title={t('privacy')}>
+    <Section title={t('privacy')} subtitle="">
+      <p>{t('privacy:analytics')}</p>
+      <p>{t('privacy:location')}</p>
     </Section>
   </Layout>
 )
@@ -18,4 +19,4 @@ Privacy.getInitialProps = async (): Promise<any> => ({
   namespacesRequired: ['common', 'privacy']
 })
 
-export default i18n.withTranslation('privacy')(Privacy)
+export default i18n.withTranslation('common')(Privacy)

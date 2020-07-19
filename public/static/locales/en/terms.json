@@ -1,7 +1,6 @@
 {
-  "terms": "Terms of Use",
-  "terms-general": "Information, provided by the \"Vremenar\" application is for informational use. It is not possible to fully guarantee the timeliness, accuracy, reliability and completeness of the information published.",
-  "terms-unpredictable": "Because of the nature of the meteorological and related natural phenomena, it is impossible to predict all extraordinary natural phenomena, and there may be deviations from actual developments.",
-  "terms-liability": "Both the developers and weather sources shall not be liable for any direct or indirect damage or inconvenience resulting from access, use or decision taken on the basis of the information published in the application.",
-  "terms-availability": "The application is provided as is for free. As internet access is required for it to work, it may stop working at any time due to technical or operational issues."
+  "general": "Information, provided by the \"Vremenar\" application is for informational use. It is not possible to fully guarantee the timeliness, accuracy, reliability and completeness of the information published.",
+  "unpredictable": "Because of the nature of the meteorological and related natural phenomena, it is impossible to predict all extraordinary natural phenomena, and there may be deviations from actual developments.",
+  "liability": "Both the developers and weather sources shall not be liable for any direct or indirect damage or inconvenience resulting from access, use or decision taken on the basis of the information published in the application.",
+  "availability": "The application is provided as is for free. As internet access is required for it to work, it may stop working at any time due to technical or operational issues. During the testing period old versions of the app can stop working."
 }

@@ -10,9 +10,9 @@ const Footer: FunctionComponent<Props> = ({ t }) => (
     <i18n.Link href="/download">
       <a>{t('download')}</a>
     </i18n.Link>
-    <i18n.Link href="/about">
+    {/* <i18n.Link href="/about">
       <a>{t('about')}</a>
-    </i18n.Link>
+    </i18n.Link> */}
     <i18n.Link href="/terms">
       <a>{t('terms')}</a>
     </i18n.Link>

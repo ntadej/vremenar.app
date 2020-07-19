@@ -1,7 +1,6 @@
 {
-  "terms": "Pogoji uporabe",
-  "terms-general": "Informacije, objavljene v aplikaciji \"Vremenar\" so informativne narave. Ni mogoče v celoti zagotoviti pravočasnosti, točnosti, zanesljivosti in popolnosti objavljenih informacij.",
-  "terms-unpredictable": "Zaradi narave meteoroloških in z njimi povezanih naravnih pojavov ni mogoče napovedati vseh izrednih naravne pojave, prav tako lahko prihaja do odstopanj napovedi in opozoril od dejanskega razvoja dogodkov.",
-  "terms-liability": "Tako avtorji aplikacije, kot sami viri podatkov ne prevzemajo odgovornosti za neposredno ali posredno izgubo oziroma škodo, materialno in nematerialno, ki bi nastala zaradi dostopa, uporabe ali odločitve sprejete na podlagi informacij objavljenih v aplikaciji.",
-  "terms-availability": "Aplikacija je na voljo brezplačno. Za svoje delovanje potrebuje internetno povezavo, zaradi česar lahko preneha delovati kadarkoli zaradi tehničnih ali operativnih težav."
+  "general": "Informacije, objavljene v aplikaciji \"Vremenar\" so informativne narave. Ni mogoče v celoti zagotoviti pravočasnosti, točnosti, zanesljivosti in popolnosti objavljenih informacij.",
+  "unpredictable": "Zaradi narave meteoroloških in z njimi povezanih naravnih pojavov ni mogoče napovedati vseh izrednih naravne pojave, prav tako lahko prihaja do odstopanj napovedi in opozoril od dejanskega razvoja dogodkov.",
+  "liability": "Tako avtorji aplikacije, kot sami viri podatkov, ne prevzemajo odgovornosti za neposredno ali posredno izgubo oziroma škodo, materialno in nematerialno, ki bi nastala zaradi dostopa, uporabe ali odločitve sprejete na podlagi informacij objavljenih v aplikaciji.",
+  "availability": "Aplikacija je na voljo brezplačno. Za svoje delovanje potrebuje internetno povezavo, zaradi česar lahko preneha delovati kadarkoli zaradi tehničnih ali operativnih težav. V času testnega obdobja lahko starejše različice prenehajo delovati."
 }
