@@ -1,14 +1,12 @@
 const NextI18Next = require('next-i18next').default;
+const { localeSubpaths } = require('next/config').default().publicRuntimeConfig
+const path = require('path')
 
 const nextI18Next = new NextI18Next({
   defaultLanguage: 'en',
   otherLanguages: ['sl'],
   browserLanguageDetection: true,
-
-  localeSubpaths: {
-    'en': 'en',
-    'sl': 'sl'
-  }
+  localePath: path.resolve('./public/static/locales')
 })
 
 const initHMR = async () => {

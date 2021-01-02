@@ -2,6 +2,11 @@ const path = require('path')
 const withTM = require('next-transpile-modules')(['@tano/common']);
 
 module.exports = withTM({
+  localeSubpaths: {
+    'en': 'en',
+    'sl': 'sl'
+  },
+
   sassOptions: {
     includePaths: [
       path.join(__dirname, 'assets'),

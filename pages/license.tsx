@@ -5,7 +5,7 @@ import { Section } from '@tano/common'
 
 const License: NextPage = () => (
   <Layout title="License">
-    <Section title="License" subtitle="Copyright &copy; 2020 Tadej Novak">
+    <Section title="License" subtitle="Copyright &copy; 2021 Tadej Novak">
 
       <p>Vremenar is free(libre) software.This means that the application
       source code is available to public, anyone is welcome to research
