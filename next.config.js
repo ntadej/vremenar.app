@@ -1,10 +1,16 @@
 const path = require('path')
 const withTM = require('next-transpile-modules')(['@tano/common']);
+const { nextI18NextRewrites } = require('next-i18next/rewrites')
+
+const localeSubpaths = {
+  'en': 'en',
+  'sl': 'sl'
+}
 
 module.exports = withTM({
-  localeSubpaths: {
-    'en': 'en',
-    'sl': 'sl'
+  rewrites: async () => nextI18NextRewrites(localeSubpaths),
+  publicRuntimeConfig: {
+    localeSubpaths,
   },
 
   sassOptions: {

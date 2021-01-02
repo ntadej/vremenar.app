@@ -5,6 +5,7 @@ const path = require('path')
 const nextI18Next = new NextI18Next({
   defaultLanguage: 'en',
   otherLanguages: ['sl'],
+  localeSubpaths,
   browserLanguageDetection: true,
   localePath: path.resolve('./public/static/locales')
 })
