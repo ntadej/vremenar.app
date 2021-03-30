@@ -3,7 +3,7 @@ import Link from 'components/LinkI18n'
 import i18n from 'i18n'
 import { WithTranslation } from 'next-i18next'
 
-interface Props extends WithTranslation { }
+type Props = WithTranslation
 
 const NavItems: FunctionComponent<Props> = ({ t }) => (
   <div className="navbar-start">
@@ -13,9 +13,7 @@ const NavItems: FunctionComponent<Props> = ({ t }) => (
       </a>
     </Link> */}
     <Link href="/download">
-      <a className="navbar-item">
-        {t('download')}
-      </a>
+      <a className="navbar-item">{t('download')}</a>
     </Link>
   </div>
 )

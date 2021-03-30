@@ -3,7 +3,7 @@ import { Link } from 'i18n'
 import React, { Children, FunctionComponent, ReactElement } from 'react'
 
 type Props = {
-  href: string,
+  href: string
   router: NextRouter
 }
 

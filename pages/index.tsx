@@ -1,17 +1,17 @@
-import { NextPage } from 'next';
-import { HeadSetup, GitHubCorner } from '@tano/common';
+import { NextPage } from 'next'
+import { HeadSetup, GitHubCorner } from '@tano/common'
 import Footer from 'components/Footer'
 import LocaleDropdown from 'components/LocaleDropdown'
 import i18n from 'i18n'
 import { WithTranslation } from 'next-i18next'
 import { testingVersion } from '../constants'
 
-interface Props extends WithTranslation { }
+type Props = WithTranslation
 
 const Home: NextPage<Props> = ({ t }) => (
   <div>
     <HeadSetup title="" siteTitle="Vremenar" siteColor="#FFDB4F" />
-    <section id="hero-home" className="hero is-primary is-fullheight has-gradient">
+    <section className="hero is-home is-primary is-fullheight has-gradient">
       <GitHubCorner href="https://github.com/ntadej/Vremenar" />
 
       <div className="hero-head has-text-right">
@@ -27,7 +27,9 @@ const Home: NextPage<Props> = ({ t }) => (
             <div className="column has-text-centered-mobile">
               <h1>Vremenar</h1>
               <i18n.Link href="/download">
-                <a className="button is-large is-primary is-inverted">{t('download')} v{testingVersion}</a>
+                <a className="button is-large is-primary is-inverted">
+                  {t('download')} v{testingVersion}
+                </a>
               </i18n.Link>
 
               <p></p>
@@ -38,7 +40,9 @@ const Home: NextPage<Props> = ({ t }) => (
                     {t('no-stable')}
                   </li> */}
                   <li>
-                    <a href="https://github.com/ntadej/Vremenar">{t('github')}</a>
+                    <a href="https://github.com/ntadej/Vremenar">
+                      {t('github')}
+                    </a>
                   </li>
                   <li>
                     <i18n.Link href="/license">
@@ -65,10 +69,10 @@ const Home: NextPage<Props> = ({ t }) => (
 
     <Footer />
   </div>
-);
+)
 
 Home.getInitialProps = async (): Promise<any> => ({
-  namespacesRequired: ['common']
+  namespacesRequired: ['common'],
 })
 
-export default i18n.withTranslation('common')(Home);
+export default i18n.withTranslation('common')(Home)

@@ -3,7 +3,7 @@ import { Footer as FooterBase } from '@tano/common'
 import i18n from 'i18n'
 import { WithTranslation } from 'next-i18next'
 
-interface Props extends WithTranslation { }
+type Props = WithTranslation
 
 const Footer: FunctionComponent<Props> = ({ t }) => (
   <FooterBase>

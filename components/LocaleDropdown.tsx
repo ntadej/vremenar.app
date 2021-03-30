@@ -7,7 +7,11 @@ const LocaleDropdown: FunctionComponent = () => {
   }
 
   return (
-    <nav className="navbar navbar-primary is-primary" role="navigation" aria-label="main navigation">
+    <nav
+      className="navbar navbar-primary is-primary"
+      role="navigation"
+      aria-label="main navigation"
+    >
       {/* <div className="container"> */}
 
       <div className="navbar-end">
@@ -19,10 +23,10 @@ const LocaleDropdown: FunctionComponent = () => {
           <div className="navbar-dropdown is-right">
             <a className="navbar-item" onClick={() => toggleLocale('en')}>
               English
-              </a>
+            </a>
             <a className="navbar-item" onClick={() => toggleLocale('sl')}>
               Slovenščina
-              </a>
+            </a>
           </div>
         </div>
       </div>

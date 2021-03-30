@@ -3,8 +3,8 @@ import i18n from 'i18n'
 import NavItems from 'components/NavItems'
 
 const Navigation: FunctionComponent = () => {
-  let burger = createRef<HTMLDivElement>()
-  let nav = createRef<HTMLDivElement>()
+  const burger = createRef<HTMLDivElement>()
+  const nav = createRef<HTMLDivElement>()
 
   function burgerClicked() {
     if (burger.current) {
@@ -20,14 +20,24 @@ const Navigation: FunctionComponent = () => {
   }
 
   return (
-    <nav className="navbar navbar-primary is-primary" role="navigation" aria-label="main navigation">
+    <nav
+      className="navbar navbar-primary is-primary"
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div className="container">
         <div className="navbar-brand">
           <i18n.Link href="/">
-            <a className="navbar-item is-brand"><span className="logo"></span>Vremenar</a>
+            <a className="navbar-item is-brand">
+              <span className="logo"></span>Vremenar
+            </a>
           </i18n.Link>
 
-          <div ref={burger} className="burger navbar-burger" onClick={burgerClicked}>
+          <div
+            ref={burger}
+            className="burger navbar-burger"
+            onClick={burgerClicked}
+          >
             <span></span>
             <span></span>
             <span></span>
@@ -54,7 +64,6 @@ const Navigation: FunctionComponent = () => {
             </div>
           </div>
         </div>
-
       </div>
     </nav>
   )

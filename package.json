@@ -3,23 +3,40 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "lint-eslint": "eslint . --ext js,jsx,ts,tsx --max-warnings=0",
+    "lint-eslint-fix": "eslint . --ext js,jsx,ts,tsx --fix --max-warnings=0",
+    "lint-sass": "stylelint \"**/*.sass\"",
+    "lint-typescript": "tsc --noEmit --declaration",
+    "prettier-check": "prettier --check . --loglevel warn",
+    "prettier-fix": "prettier --write .",
+    "lint-fix": "run-s prettier-fix lint-eslint-fix",
+    "lint": "run-p lint-typescript prettier-check lint-eslint lint-sass",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
     "@tano/common": "github:ntadej/tano-style#next",
-    "next": "^10.0.4",
+    "next": "~10.1.2",
     "next-i18next": "^7.0.1",
-    "next-transpile-modules": "^6.0.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "sass": "^1.32.0"
+    "next-transpile-modules": "^6.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.32.8"
   },
   "devDependencies": {
-    "@types/node": "^14.14.19",
-    "@types/react": "^17.0.0",
-    "i18next-hmr": "^1.6.3",
-    "typescript": "^4.1.3"
+    "@types/node": "^14.14.37",
+    "@types/react": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "eslint": "^7.23.0",
+    "i18next-hmr": "^1.7.1",
+    "npm-run-all": "^4.1.5",
+    "pre-commit": "^1.2.2",
+    "prettier": "2.2.1",
+    "stylelint": "^13.12.0",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-scss": "^3.19.0",
+    "typescript": "^4.2.3"
   }
 }

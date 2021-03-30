@@ -1,10 +1,10 @@
-import { NextPage } from 'next';
+import { NextPage } from 'next'
 import Layout from 'components/Layout'
 import { Section } from '@tano/common'
 import i18n from 'i18n'
 import { WithTranslation } from 'next-i18next'
 
-interface Props extends WithTranslation { }
+type Props = WithTranslation
 
 const Terms: NextPage<Props> = ({ t }) => (
   <Layout title={t('terms')}>
@@ -18,7 +18,7 @@ const Terms: NextPage<Props> = ({ t }) => (
 )
 
 Terms.getInitialProps = async (): Promise<any> => ({
-  namespacesRequired: ['common', 'terms']
+  namespacesRequired: ['common', 'terms'],
 })
 
 export default i18n.withTranslation('common')(Terms)
