@@ -1,35 +1,33 @@
 .navbar
   .logo
+    background: url('logo/logo.png') no-repeat center
     float: left
-    width: 36px
     height: 36px
     margin-right: 12px
-
-    background: url("logo/logo.png") no-repeat center
+    width: 36px
 
     +retina
       background-image: url("logo/logo@2x.png")
       background-size: 36px 36px
 
 .logo-huge
+  background: url('logo/huge.png') no-repeat center
   margin: 0 auto
   width: 256px
 
-  background: url("logo/huge.png") no-repeat center
-
-  &:after
-    padding-top: 100%
+  &::after
+    content: ''
     display: block
-    content: ""
+    padding-top: 100%
 
   +retina
-    background-image: url("logo/huge@2x.png")
+    background-image: url('logo/huge@2x.png')
     background-size: 256px 256px
 
   +mobile
     width: 128px
-    background-image: url("logo/huge-mobile.png")
+    background-image: url('logo/huge-mobile.png')
 
     +retina
-      background-image: url("logo/huge-mobile@2x.png")
+      background-image: url('logo/huge-mobile@2x.png')
       background-size: 128px 128px
