@@ -1,10 +1,9 @@
 import { FunctionComponent } from 'react'
-import i18n from 'i18n'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 const LocaleDropdown: FunctionComponent = () => {
-  function toggleLocale(lang: string) {
-    i18n.i18n.changeLanguage(lang)
-  }
+  const router = useRouter()
 
   return (
     <nav
@@ -17,16 +16,16 @@ const LocaleDropdown: FunctionComponent = () => {
       <div className="navbar-end">
         <div className="navbar-item has-dropdown is-hoverable">
           <a className="navbar-link is-arrowless">
-            {i18n.i18n.language == 'en' ? 'English' : 'Slovenščina'}
+            {router.locale == 'en' ? 'English' : 'Slovenščina'}
           </a>
 
           <div className="navbar-dropdown is-right">
-            <a className="navbar-item" onClick={() => toggleLocale('en')}>
-              English
-            </a>
-            <a className="navbar-item" onClick={() => toggleLocale('sl')}>
-              Slovenščina
-            </a>
+            <Link href={router.asPath} locale="en">
+              <a className="navbar-item">English</a>
+            </Link>
+            <Link href={router.asPath} locale="sl">
+              <a className="navbar-item">Slovenščina</a>
+            </Link>
           </div>
         </div>
       </div>

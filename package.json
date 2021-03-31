@@ -15,10 +15,13 @@
     "build": "next build",
     "start": "next start"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "dependencies": {
     "@tano/common": "github:ntadej/tano-style#next",
     "next": "~10.1.2",
-    "next-i18next": "^7.0.1",
+    "next-translate": "^1.0.5",
     "next-transpile-modules": "^6.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -30,7 +33,6 @@
     "@typescript-eslint/eslint-plugin": "^4.20.0",
     "@typescript-eslint/parser": "^4.20.0",
     "eslint": "^7.23.0",
-    "i18next-hmr": "^1.7.1",
     "npm-run-all": "^4.1.5",
     "pre-commit": "^1.2.2",
     "prettier": "2.2.1",

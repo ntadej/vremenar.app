@@ -1,8 +1,10 @@
 import { FunctionComponent, createRef } from 'react'
-import i18n from 'i18n'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 import NavItems from 'components/NavItems'
 
 const Navigation: FunctionComponent = () => {
+  const router = useRouter()
   const burger = createRef<HTMLDivElement>()
   const nav = createRef<HTMLDivElement>()
 
@@ -15,10 +17,6 @@ const Navigation: FunctionComponent = () => {
     }
   }
 
-  function toggleLocale(lang: string) {
-    i18n.i18n.changeLanguage(lang)
-  }
-
   return (
     <nav
       className="navbar navbar-primary is-primary"
@@ -27,17 +25,13 @@ const Navigation: FunctionComponent = () => {
     >
       <div className="container">
         <div className="navbar-brand">
-          <i18n.Link href="/">
+          <Link href="/">
             <a className="navbar-item is-brand">
               <span className="logo"></span>Vremenar
             </a>
-          </i18n.Link>
+          </Link>
 
-          <div
-            ref={burger}
-            className="burger navbar-burger"
-            onClick={burgerClicked}
-          >
+          <div ref={burger} className="burger navbar-burger" onClick={burgerClicked}>
             <span></span>
             <span></span>
             <span></span>
@@ -51,16 +45,16 @@ const Navigation: FunctionComponent = () => {
         <div className="navbar-end">
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link is-arrowless">
-              {i18n.i18n.language == 'en' ? 'English' : 'Slovenščina'}
+              {router.locale == 'en' ? 'English' : 'Slovenščina'}
             </a>
 
             <div className="navbar-dropdown is-right">
-              <a className="navbar-item" onClick={() => toggleLocale('en')}>
-                English
-              </a>
-              <a className="navbar-item" onClick={() => toggleLocale('sl')}>
-                Slovenščina
-              </a>
+              <Link href={router.asPath} locale="en">
+                <a className="navbar-item">English</a>
+              </Link>
+              <Link href={router.asPath} locale="sl">
+                <a className="navbar-item">Slovenščina</a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,14 +1,6 @@
-import App from 'next/app'
-import type { AppProps, AppContext } from 'next/app'
-import { appWithTranslation } from 'i18n'
+import type { AppProps } from 'next/app'
 import 'style/main.sass'
 
-const MainApp = ({ Component, pageProps }: AppProps) => (
-  <Component {...pageProps} />
-)
+const MainApp = ({ Component, pageProps }: AppProps) => <Component {...pageProps} />
 
-MainApp.getInitialProps = async (appContext: AppContext) => ({
-  ...(await App.getInitialProps(appContext)),
-})
-
-export default appWithTranslation(MainApp)
+export default MainApp

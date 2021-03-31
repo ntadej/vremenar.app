@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 import { HeadSetup } from '@tano/common'
-import Navigation from 'components/Navigation'
 import Footer from 'components/Footer'
+import Navigation from 'components/Navigation'
 
 type Props = {
   title: string

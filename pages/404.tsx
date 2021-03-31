@@ -1,5 +1,5 @@
-import { NextPage } from 'next'
 import { ErrorLayout } from '@tano/common'
+import { NextPage } from 'next'
 
 const ErrorPage: NextPage = () => (
   <ErrorLayout

@@ -1,25 +1,27 @@
-import { FunctionComponent } from 'react'
 import { Footer as FooterBase } from '@tano/common'
-import i18n from 'i18n'
-import { WithTranslation } from 'next-i18next'
+import { FunctionComponent } from 'react'
+import Link from 'next/link'
+import useTranslation from 'next-translate/useTranslation'
 
-type Props = WithTranslation
+const Footer: FunctionComponent = () => {
+  const { t } = useTranslation('common')
 
-const Footer: FunctionComponent<Props> = ({ t }) => (
-  <FooterBase>
-    <i18n.Link href="/download">
-      <a>{t('download')}</a>
-    </i18n.Link>
-    {/* <i18n.Link href="/about">
+  return (
+    <FooterBase>
+      <Link href="/download">
+        <a>{t('download')}</a>
+      </Link>
+      {/* <Link href="/about">
       <a>{t('about')}</a>
-    </i18n.Link> */}
-    <i18n.Link href="/terms">
-      <a>{t('terms')}</a>
-    </i18n.Link>
-    <i18n.Link href="/privacy">
-      <a>{t('privacy')}</a>
-    </i18n.Link>
-  </FooterBase>
-)
+    </Link> */}
+      <Link href="/terms">
+        <a>{t('terms')}</a>
+      </Link>
+      <Link href="/privacy">
+        <a>{t('privacy')}</a>
+      </Link>
+    </FooterBase>
+  )
+}
 
-export default i18n.withTranslation('common')(Footer)
+export default Footer
