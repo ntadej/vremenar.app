@@ -27,8 +27,20 @@ const Download: NextPage = () => {
               href={`https://github.com/ntadej/Vremenar/releases/download/v${testingVersion}/Vremenar_${testingVersion}.apk`}
               className="button is-large is-primary"
             >
-              Android & Android TV
+              Android, Android TV, Fire TV
             </a>
+            <br />
+            (sideload only, Amazon publication pending)
+          </div>
+          <div className="column has-text-centered">
+            <a
+              href={`https://github.com/ntadej/Vremenar/releases/download/v${testingVersion}/Vremenar_${testingVersion}.ipa`}
+              className="button is-large is-primary"
+            >
+              iOS
+            </a>
+            <br />
+            (sideload only)
           </div>
           <div className="column has-text-centered">
             <a
