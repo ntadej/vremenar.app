@@ -20,9 +20,9 @@
   ],
   "dependencies": {
     "@tano/common": "github:ntadej/tano-style#next",
-    "next": "~10.1.2",
+    "next": "~10.2.0",
     "next-translate": "^1.0.5",
-    "next-transpile-modules": "^6.3.0",
+    "next-transpile-modules": "^7.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "sass": "^1.32.8"
