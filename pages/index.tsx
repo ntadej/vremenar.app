@@ -27,6 +27,7 @@ const Home: NextPage = () => {
               </div>
               <div className="column has-text-centered-mobile">
                 <h1>Vremenar</h1>
+                <p className="is-size-4">{t('tagline')}</p>
                 <Link href="/download">
                   <a className="button is-large is-primary is-inverted">
                     {t('download')} v{testingVersion}
