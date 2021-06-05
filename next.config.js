@@ -11,5 +11,5 @@ module.exports = withTM(
       includePaths: [path.join(__dirname, 'assets'), path.join(__dirname, 'style')],
     },
   }),
-  { resolveSymlinks: true }
+  { resolveSymlinks: false }
 )
