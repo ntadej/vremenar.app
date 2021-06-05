@@ -11,9 +11,7 @@ const LocaleDropdown: FunctionComponent = () => {
       role="navigation"
       aria-label="main navigation"
     >
-      {/* <div className="container"> */}
-
-      <div className="navbar-end">
+      <div className="navbar-end is-hidden-mobile">
         <div className="navbar-item has-dropdown is-hoverable">
           <a className="navbar-link is-arrowless">
             {router.locale == 'en' ? 'English' : 'Slovenščina'}
@@ -30,7 +28,13 @@ const LocaleDropdown: FunctionComponent = () => {
         </div>
       </div>
 
-      {/* </div> */}
+      <div className="navbar-end is-hidden-desktop">
+        <Link href="/language">
+          <a className="navbar-item">
+            {router.locale == 'en' ? 'English' : 'Slovenščina'}
+          </a>
+        </Link>
+      </div>
     </nav>
   )
 }

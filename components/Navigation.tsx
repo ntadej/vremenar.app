@@ -42,7 +42,7 @@ const Navigation: FunctionComponent = () => {
           <NavItems />
         </div>
 
-        <div className="navbar-end">
+        <div className="navbar-end is-hidden-touch">
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link is-arrowless">
               {router.locale == 'en' ? 'English' : 'Slovenščina'}
