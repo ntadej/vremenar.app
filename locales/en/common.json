@@ -1,13 +1,11 @@
 {
   "about": "About",
   "download": "Download",
-  "download-platform": "Select your platform below",
-  "download-experimental": "Linux support still experimental.",
-  "download-all": "All downloads",
   "license": "License",
   "privacy": "Privacy Policy",
   "terms": "Terms of Service",
   "scroll-for-more": "Scroll down to learn more",
   "no-stable": "No stable version yet",
-  "github": "Follow development on GitHub"
+  "github": "Follow development on GitHub",
+  "legal": "Linux is a registered trademark of Linus Torvalds. macOS, iPhone and iPad are trademarks of Apple Inc. Microsoft, Windows are trademarks of the Microsoft group of companies. Google Play and the Google Play logo are trademarks of Google LLC."
 }

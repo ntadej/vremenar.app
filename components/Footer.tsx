@@ -7,7 +7,7 @@ const Footer: FunctionComponent = () => {
   const { t } = useTranslation('common')
 
   return (
-    <FooterBase>
+    <FooterBase extra={t('legal')}>
       <Link href="/download">
         <a>{t('download')}</a>
       </Link>

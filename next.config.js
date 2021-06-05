@@ -10,5 +10,6 @@ module.exports = withTM(
     sassOptions: {
       includePaths: [path.join(__dirname, 'assets'), path.join(__dirname, 'style')],
     },
-  })
+  }),
+  { resolveSymlinks: true }
 )

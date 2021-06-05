@@ -1,59 +1,113 @@
 import { NextPage } from 'next'
 import { Section } from '@tano/common'
-import { testingVersion } from 'common/constants'
+import { testingVersion, testingBuild } from 'common/constants'
 import Layout from 'components/Layout'
 import useTranslation from 'next-translate/useTranslation'
 
 const Download: NextPage = () => {
-  const { t } = useTranslation('common')
+  const { t, lang } = useTranslation('common')
 
   return (
     <Layout title={t('download')}>
       <Section
         title={t('download') + ' Vremenar v' + testingVersion}
-        subtitle={t('download-platform')}
+        subtitle={t('download:platform')}
       >
         <div className="columns">
-          <div className="column has-text-centered">
+          <div className="column is-one-third has-text-centered">
+            <h2>macOS</h2>
             <a
               href={`https://github.com/ntadej/Vremenar/releases/download/v${testingVersion}/Vremenar_${testingVersion}.dmg`}
-              className="button is-large is-primary"
             >
-              macOS
+              <img
+                alt="Get it on GitHub"
+                src="/assets/misc/get-it-on-github.png"
+                className="badge google first"
+              />
             </a>
           </div>
-          <div className="column has-text-centered">
+          <div className="column is-one-third has-text-centered">
+            <h2>Linux</h2>
+            <a href="https://flathub.org/apps/details/si.tano.Vremenar">
+              <img
+                alt="Download on Flathub"
+                src="https://flathub.org/assets/badges/flathub-badge-en.png"
+                className="badge"
+              />
+            </a>
             <a
-              href={`https://github.com/ntadej/Vremenar/releases/download/v${testingVersion}/Vremenar_${testingVersion}.apk`}
-              className="button is-large is-primary"
+              href={`https://github.com/ntadej/Vremenar/releases/v${testingVersion}`}
+              target="_blank"
             >
-              Android, Android TV, Fire TV
+              <img
+                alt="Get it on GitHub"
+                src="/assets/misc/get-it-on-github.png"
+                className="badge google"
+              />
             </a>
-            <br />
-            (sideload only, Amazon publication pending)
           </div>
-          <div className="column has-text-centered">
+          <div className="column is-one-third has-text-centered">
+            <h2>Windows</h2>
+            {t('download:soon')}
+          </div>
+        </div>
+        <div className="columns">
+          <div className="column is-one-third has-text-centered">
+            <h2>Android &amp; Android TV</h2>
+            <a
+              href={`https://play.google.com/store/apps/details?id=si.tano.Vremenar&hl=${lang}&utm_source=Website&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1`}
+            >
+              <img
+                alt="Get it on Google Play"
+                src={`https://play.google.com/intl/en_us/badges/static/images/badges/${lang}_badge_web_generic.png`}
+                className="badge google first"
+              />
+            </a>
+            <a href="https://www.amazon.com/gp/product/B093Z72DBC/ref=mas_pm_vremenar_weather">
+              <img
+                alt="Available at Amazon Appstore"
+                src="https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/devportal2/res/images/amazon-appstore-badge-english-black.png"
+                className="badge"
+              />
+            </a>
+            <a
+              href={`https://github.com/ntadej/Vremenar/releases/download/v${testingVersion}/Vremenar_${testingVersion}_${testingBuild}.apk`}
+            >
+              <img
+                alt="Get it on GitHub"
+                src="/assets/misc/get-it-on-github.png"
+                className="badge google"
+              />
+            </a>
+          </div>
+          <div className="column is-one-third has-text-centered">
+            <h2>iOS</h2>
             <a
               href={`https://github.com/ntadej/Vremenar/releases/download/v${testingVersion}/Vremenar_${testingVersion}.ipa`}
-              className="button is-large is-primary"
             >
-              iOS
+              <img
+                alt="Get it on GitHub"
+                src="/assets/misc/get-it-on-github.png"
+                className="badge google first"
+              />
             </a>
-            <br />
-            (sideload only)
+            {t('download:ios-sideload')} {t('download:ios-sideload-is-recommended')}{' '}
+            <a href="https://altstore.io/" target="_blank">
+              AltStore
+            </a>
+            .
           </div>
-          <div className="column has-text-centered">
-            <a
-              href={`https://github.com/ntadej/Vremenar/releases/tag/v${testingVersion}`}
-              className="button is-large is-primary"
-            >
-              {t('download-all')}
+          <div className="column is-one-third has-text-centered">
+            <h2>{t('download:all')}</h2>
+            <a href={`https://github.com/ntadej/Vremenar/releases/v${testingVersion}`}>
+              <img
+                alt="Get it on GitHub"
+                src="/assets/misc/get-it-on-github.png"
+                className="badge google first"
+              />
             </a>
           </div>
         </div>
-        <p className="has-text-centered">
-          <i>{t('download-experimental')}</i>
-        </p>
       </Section>
     </Layout>
   )

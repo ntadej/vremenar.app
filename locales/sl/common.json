@@ -1,13 +1,11 @@
 {
   "about": "O programu",
   "download": "Prenesi",
-  "download-platform": "Izberi svojo platformo",
-  "download-experimental": "Podpora za Linux je eksperimentalna.",
-  "download-all": "Vsi prenosi",
   "license": "Licenca",
   "privacy": "Politika zasebnosti",
   "terms": "Pogoji uporabe",
   "scroll-for-more": "Pomakni se dalje za več informacij",
   "no-stable": "Brez stabilne različice",
-  "github": "Sledi razvoju na GitHubu"
+  "github": "Sledi razvoju na GitHubu",
+  "legal": "Linux je blagovna znamka Linusa Torvaldsa. macOS, iPhone in iPad so blagovne znamke podjetja Apple Inc. Microsoft, Windows sta blagovni znamki skupine Microsoft. Google Play in logotip Googla Play sta blagovni znamki podjetja Google LLC."
 }
