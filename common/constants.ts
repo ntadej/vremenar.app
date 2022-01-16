@@ -1,6 +1,6 @@
 const stableVersion = null
 const stableBuild = null
-const testingVersion = '0.3.4'
-const testingBuild = '243'
+const testingVersion = '0.4.0'
+const testingBuild = '272'
 
 export { stableVersion, stableBuild, testingVersion, testingBuild }
