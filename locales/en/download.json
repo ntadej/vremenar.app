@@ -1,7 +1,14 @@
 {
+  "with-version": "Download Vremenar v{{version}}",
   "platform": "Select your platform below",
   "all": "All downloads",
-  "soon": "Coming soon!",
-  "ios-sideload": "Sideload only.",
-  "ios-sideload-is-recommended": "It is recommended to use"
+  "also-on": "Also available directly on <a>{{site}}</a>.",
+  "also-on-github": "GitHub",
+
+  "badge-amazon-app-store": "available at amazon appstore",
+  "badge-app-store": "Download on the App Store",
+  "badge-flathub": "Download On Flathub",
+  "badge-github": "Get it on GitHub",
+  "badge-google-play": "Get it on Google Play",
+  "badge-mac-app-store": "Download on the Mac App Store"
 }

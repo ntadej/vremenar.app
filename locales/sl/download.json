@@ -1,7 +1,14 @@
 {
+  "with-version": "Prenesi Vremenar v{{version}}",
   "platform": "Izberi svojo platformo",
   "all": "Vsi prenosi",
-  "soon": "Kmalu!",
-  "ios-sideload": "Samo direktna namestitev.",
-  "ios-sideload-is-recommended": "Priporoča se uporabo"
+  "also-on": "Na voljo tudi direktno na <a>{{site}}</a>.",
+  "also-on-github": "GitHubu",
+
+  "badge-amazon-app-store": "Na voljo v amazon appstore",
+  "badge-app-store": "Prenos iz App Store",
+  "badge-flathub": "Prenos iz Flathuba",
+  "badge-github": "Prenos iz GitHuba",
+  "badge-google-play": "Na voljo v Google Play",
+  "badge-mac-app-store": "Prenos iz Mac App Store"
 }
