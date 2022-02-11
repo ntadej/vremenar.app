@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import { Section } from '@tano/common'
+import { Section } from '@ntadej/style'
 import Layout from 'components/Layout'
 import useTranslation from 'next-translate/useTranslation'
 

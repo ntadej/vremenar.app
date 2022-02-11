@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import { Section } from '@tano/common'
+import { Section } from '@ntadej/style'
 import { useRouter } from 'next/router'
 import Layout from 'components/Layout'
 import Link from 'next/link'

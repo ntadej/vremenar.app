@@ -1,4 +1,4 @@
-import { HeadSetup, GitHubCorner } from '@tano/common'
+import { HeadSetup, GitHubCorner } from '@ntadej/style'
 import { NextPage } from 'next'
 import { testingVersion } from 'common/constants'
 import Footer from 'components/Footer'

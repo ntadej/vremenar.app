@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react'
-import { HeadSetup } from '@tano/common'
+import { HeadSetup } from '@ntadej/style'
 import Footer from 'components/Footer'
 import Navigation from 'components/Navigation'
 

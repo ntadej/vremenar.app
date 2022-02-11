@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import { Section } from '@tano/common'
+import { Section } from '@ntadej/style'
 import Layout from 'components/Layout'
 
 const License: NextPage = () => (
@@ -7,7 +7,7 @@ const License: NextPage = () => (
     <Section title="GNU General Public License" subtitle="Version 3, 29 June 2007">
       <p className="has-text-centered">
         Copyright © 2007 Free Software Foundation, Inc. &lt;
-        <a href="http://fsf.org/" target="_blank">
+        <a href="http://fsf.org/" target="_blank" rel="noreferrer">
           http://fsf.org/
         </a>
         &gt;
@@ -57,15 +57,16 @@ const License: NextPage = () => (
         permission to copy, distribute and/or modify it.
       </p>
       <p>
-        For the developers' and authors' protection, the GPL clearly explains that there
-        is no warranty for this free software. For both users' and authors' sake, the
-        GPL requires that modified versions be marked as changed, so that their problems
-        will not be attributed erroneously to authors of previous versions.
+        For the developers&apos; and authors&apos; protection, the GPL clearly explains
+        that there is no warranty for this free software. For both users&apos; and
+        authors&apos; sake, the GPL requires that modified versions be marked as
+        changed, so that their problems will not be attributed erroneously to authors of
+        previous versions.
       </p>
       <p>
         Some devices are designed to deny users access to install or run modified
         versions of the software inside them, although the manufacturer can do so. This
-        is fundamentally incompatible with the aim of protecting users' freedom to
+        is fundamentally incompatible with the aim of protecting users&apos; freedom to
         change the software. The systematic pattern of such abuse occurs in the area of
         products for individuals to use, which is precisely where it is most
         unacceptable. Therefore, we have designed this version of the GPL to prohibit
@@ -156,14 +157,14 @@ const License: NextPage = () => (
         The “Corresponding Source” for a work in object code form means all the source
         code needed to generate, install, and (for an executable work) run the object
         code and to modify the work, including scripts to control those activities.
-        However, it does not include the work's System Libraries, or general-purpose
-        tools or generally available free programs which are used unmodified in
-        performing those activities but which are not part of the work. For example,
-        Corresponding Source includes interface definition files associated with source
-        files for the work, and the source code for shared libraries and dynamically
-        linked subprograms that the work is specifically designed to require, such as by
-        intimate data communication or control flow between those subprograms and other
-        parts of the work.
+        However, it does not include the work&apos;s System Libraries, or
+        general-purpose tools or generally available free programs which are used
+        unmodified in performing those activities but which are not part of the work.
+        For example, Corresponding Source includes interface definition files associated
+        with source files for the work, and the source code for shared libraries and
+        dynamically linked subprograms that the work is specifically designed to
+        require, such as by intimate data communication or control flow between those
+        subprograms and other parts of the work.
       </p>
       <p>
         The Corresponding Source need not include anything that users can regenerate
@@ -197,7 +198,7 @@ const License: NextPage = () => (
         stated below. Sublicensing is not allowed; section 10 makes it unnecessary.
       </p>
 
-      <h4>3. Protecting Users' Legal Rights From Anti-Circumvention Law.</h4>
+      <h4>3. Protecting Users&apos; Legal Rights From Anti-Circumvention Law.</h4>
       <p>
         No covered work shall be deemed part of an effective technological measure under
         any applicable law fulfilling obligations under article 11 of the WIPO copyright
@@ -209,18 +210,18 @@ const License: NextPage = () => (
         circumvention of technological measures to the extent such circumvention is
         effected by exercising rights under this License with respect to the covered
         work, and you disclaim any intention to limit operation or modification of the
-        work as a means of enforcing, against the work's users, your or third parties'
-        legal rights to forbid circumvention of technological measures.
+        work as a means of enforcing, against the work&apos;s users, your or third
+        parties&apos; legal rights to forbid circumvention of technological measures.
       </p>
 
       <h4>4. Conveying Verbatim Copies.</h4>
       <p>
-        You may convey verbatim copies of the Program's source code as you receive it,
-        in any medium, provided that you conspicuously and appropriately publish on each
-        copy an appropriate copyright notice; keep intact all notices stating that this
-        License and any non-permissive terms added in accord with section 7 apply to the
-        code; keep intact all notices of the absence of any warranty; and give all
-        recipients a copy of this License along with the Program.
+        You may convey verbatim copies of the Program&apos;s source code as you receive
+        it, in any medium, provided that you conspicuously and appropriately publish on
+        each copy an appropriate copyright notice; keep intact all notices stating that
+        this License and any non-permissive terms added in accord with section 7 apply
+        to the code; keep intact all notices of the absence of any warranty; and give
+        all recipients a copy of this License along with the Program.
       </p>
       <p>
         You may charge any price or no price for each copy that you convey, and you may
@@ -263,7 +264,7 @@ const License: NextPage = () => (
         combined with it such as to form a larger program, in or on a volume of a
         storage or distribution medium, is called an “aggregate” if the compilation and
         its resulting copyright are not used to limit the access or legal rights of the
-        compilation's users beyond what the individual works permit. Inclusion of a
+        compilation&apos;s users beyond what the individual works permit. Inclusion of a
         covered work in an aggregate does not cause this License to apply to the other
         parts of the aggregate.
       </p>
@@ -494,10 +495,10 @@ const License: NextPage = () => (
         organization, or substantially all assets of one, or subdividing an
         organization, or merging organizations. If propagation of a covered work results
         from an entity transaction, each party to that transaction who receives a copy
-        of the work also receives whatever licenses to the work the party's predecessor
-        in interest had or could give under the previous paragraph, plus a right to
-        possession of the Corresponding Source of the work from the predecessor in
-        interest, if the predecessor has it or can get it with reasonable efforts.
+        of the work also receives whatever licenses to the work the party&apos;s
+        predecessor in interest had or could give under the previous paragraph, plus a
+        right to possession of the Corresponding Source of the work from the predecessor
+        in interest, if the predecessor has it or can get it with reasonable efforts.
       </p>
       <p>
         You may not impose any further restrictions on the exercise of the rights
@@ -513,10 +514,10 @@ const License: NextPage = () => (
       <p>
         A “contributor” is a copyright holder who authorizes use under this License of
         the Program or a work on which the Program is based. The work thus licensed is
-        called the contributor's “contributor version”.
+        called the contributor&apos;s “contributor version”.
       </p>
       <p>
-        A contributor's “essential patent claims” are all patent claims owned or
+        A contributor&apos;s “essential patent claims” are all patent claims owned or
         controlled by the contributor, whether already acquired or hereafter acquired,
         that would be infringed by some manner, permitted by this License, of making,
         using, or selling its contributor version, but do not include claims that would
@@ -526,9 +527,9 @@ const License: NextPage = () => (
       </p>
       <p>
         Each contributor grants you a non-exclusive, worldwide, royalty-free patent
-        license under the contributor's essential patent claims, to make, use, sell,
-        offer for sale, import and otherwise run, modify and propagate the contents of
-        its contributor version.
+        license under the contributor&apos;s essential patent claims, to make, use,
+        sell, offer for sale, import and otherwise run, modify and propagate the
+        contents of its contributor version.
       </p>
       <p>
         In the following three paragraphs, a “patent license” is any express agreement
@@ -547,7 +548,7 @@ const License: NextPage = () => (
         manner consistent with the requirements of this License, to extend the patent
         license to downstream recipients. “Knowingly relying” means you have actual
         knowledge that, but for the patent license, your conveying the covered work in a
-        country, or your recipient's use of the covered work in a country, would
+        country, or your recipient&apos;s use of the covered work in a country, would
         infringe one or more identifiable patents in that country that you have reason
         to believe are valid.
       </p>
@@ -580,7 +581,7 @@ const License: NextPage = () => (
         under applicable patent law.
       </p>
 
-      <h4>12. No Surrender of Others' Freedom.</h4>
+      <h4>12. No Surrender of Others&apos; Freedom.</h4>
       <p>
         If conditions are imposed on you (whether by court order, agreement or
         otherwise) that contradict the conditions of this License, they do not excuse
@@ -622,7 +623,7 @@ const License: NextPage = () => (
       </p>
       <p>
         If the Program specifies that a proxy can decide which future versions of the
-        GNU General Public License can be used, that proxy's public statement of
+        GNU General Public License can be used, that proxy&apos;s public statement of
         acceptance of a version permanently authorizes you to choose that version for
         the Program.
       </p>
@@ -678,7 +679,8 @@ const License: NextPage = () => (
         to where the full notice is found.
       </p>
       <pre>
-        &lt;one line to give the program's name and a brief idea of what it does.&gt;
+        &lt;one line to give the program&apos;s name and a brief idea of what it
+        does.&gt;
         <br />
         Copyright (C) &lt;year&gt; &lt;name of author&gt;
         <br />
@@ -715,22 +717,22 @@ const License: NextPage = () => (
       <pre>
         &lt;program&gt; Copyright (C) &lt;year&gt; &lt;name of author&gt;
         <br />
-        This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+        This program comes with ABSOLUTELY NO WARRANTY; for details type `show w&apos;.
         <br />
         This is free software, and you are welcome to redistribute it
         <br />
-        under certain conditions; type `show c' for details.
+        under certain conditions; type `show c&apos; for details.
       </pre>
       <p>
-        The hypothetical commands `show w' and `show c' should show the appropriate
-        parts of the General Public License. Of course, your program's commands might be
-        different; for a GUI interface, you would use an “about box”.
+        The hypothetical commands `show w&apos; and `show c&apos; should show the
+        appropriate parts of the General Public License. Of course, your program&apos;s
+        commands might be different; for a GUI interface, you would use an “about box”.
       </p>
       <p>
         You should also get your employer (if you work as a programmer) or school, if
         any, to sign a “copyright disclaimer” for the program, if necessary. For more
         information on this, and how to apply and follow the GNU GPL, see &lt;
-        <a href="http://www.gnu.org/licenses/" target="_blank">
+        <a href="http://www.gnu.org/licenses/" target="_blank" rel="noreferrer">
           http://www.gnu.org/licenses/
         </a>
         &gt;.
@@ -741,7 +743,11 @@ const License: NextPage = () => (
         it more useful to permit linking proprietary applications with the library. If
         this is what you want to do, use the GNU Lesser General Public License instead
         of this License. But first, please read &lt;
-        <a href="http://www.gnu.org/philosophy/why-not-lgpl.html" target="_blank">
+        <a
+          href="http://www.gnu.org/philosophy/why-not-lgpl.html"
+          target="_blank"
+          rel="noreferrer"
+        >
           http://www.gnu.org/philosophy/why-not-lgpl.html
         </a>
         &gt;.

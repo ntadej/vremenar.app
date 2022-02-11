@@ -1,15 +1,16 @@
 const path = require('path')
 const nextTranslate = require('next-translate')
-const withTM = require('next-transpile-modules')(['@tano/common'])
+const withTM = require('next-transpile-modules')(['@ntadej/style'])
 
+/** @type {import('next').NextConfig} */
 module.exports = withTM(
   nextTranslate({
-    future: {
-      webpack5: true,
-    },
     sassOptions: {
       includePaths: [path.join(__dirname, 'assets'), path.join(__dirname, 'style')],
     },
   }),
-  { resolveSymlinks: false }
+  {
+    reactStrictMode: true,
+    resolveSymlinks: false,
+  }
 )

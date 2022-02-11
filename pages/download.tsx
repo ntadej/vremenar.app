@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import { NextPage } from 'next'
-import { Section } from '@tano/common'
+import { Section } from '@ntadej/style'
 import { testingVersion, testingBuild } from 'common/constants'
 import Layout from 'components/Layout'
 import useTranslation from 'next-translate/useTranslation'
@@ -43,6 +44,7 @@ const Download: NextPage = () => {
               <a
                 href={`https://github.com/ntadej/Vremenar/releases/v${testingVersion}`}
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   alt="Get it on GitHub"
@@ -107,7 +109,7 @@ const Download: NextPage = () => {
             </p>
             <p>
               {t('download:ios-sideload')} {t('download:ios-sideload-is-recommended')}{' '}
-              <a href="https://altstore.io/" target="_blank">
+              <a href="https://altstore.io/" target="_blank" rel="noreferrer">
                 AltStore
               </a>
               .

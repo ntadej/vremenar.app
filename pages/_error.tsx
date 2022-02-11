@@ -1,4 +1,4 @@
-import { ErrorLayout } from '@tano/common'
+import { ErrorLayout } from '@ntadej/style'
 import { NextPage } from 'next'
 
 type Props = {

@@ -1,4 +1,4 @@
-import { Footer as FooterBase } from '@tano/common'
+import { Footer as FooterBase } from '@ntadej/style'
 import { FunctionComponent } from 'react'
 import Link from 'next/link'
 import useTranslation from 'next-translate/useTranslation'
