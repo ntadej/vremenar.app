@@ -1,4 +1,5 @@
 import { FunctionComponent } from 'react'
+import { locale } from 'common/locale'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import useTranslation from 'next-translate/useTranslation'
@@ -17,7 +18,7 @@ const NavItems: FunctionComponent = () => {
       </Link>
       <Link href="/language">
         <a className="navbar-item is-hidden-desktop">
-          {t('language')} ({router.locale == 'en' ? 'English' : 'Slovenščina'})
+          {t('language')} ({locale[router.locale || 'en']})
         </a>
       </Link>
     </div>

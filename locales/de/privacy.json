@@ -1,0 +1,4 @@
+{
+  "analytics": "The application queries Vremenar server for weather information. During the process anonymous information about the operating system, platform and device used may be collected. No personal information about the user is recorded.",
+  "location": "An user may choose to enable location services to provide local weather information and location indicator on the map. This information is never stored on our servers or used in any way to locate the users but may be used to find the closest available weather source."
+}

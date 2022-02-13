@@ -25,6 +25,17 @@ const Language: NextPage = () => {
             </Link>
           </p>
           <p>
+            <Link href={router.asPath} locale="de">
+              <a
+                className={
+                  'button is-large' + (router.locale == 'de' ? ' is-active' : '')
+                }
+              >
+                Deutsch
+              </a>
+            </Link>
+          </p>
+          <p>
             <Link href={router.asPath} locale="sl">
               <a
                 className={

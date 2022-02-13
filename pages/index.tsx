@@ -1,5 +1,6 @@
 import { HeadSetup, GitHubCorner } from '@ntadej/style'
 import { NextPage } from 'next'
+import { locale } from 'common/locale'
 import { useRouter } from 'next/router'
 import FeatureSection from 'components/FeatureSection'
 import Footer from 'components/Footer'
@@ -95,8 +96,7 @@ const Home: NextPage = () => {
                   <span className="tag is-primary">
                     <Link href="/language">
                       <a>
-                        {t('language')} (
-                        {router.locale == 'en' ? 'English' : 'Slovenščina'})
+                        {t('language')} ({locale[router.locale || 'en']})
                       </a>
                     </Link>
                   </span>

@@ -1,4 +1,5 @@
 import { FunctionComponent, createRef } from 'react'
+import { locale } from 'common/locale'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import NavItems from 'components/NavItems'
@@ -47,13 +48,14 @@ const Navigation: FunctionComponent = () => {
 
         <div className="navbar-end is-hidden-touch">
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link is-arrowless">
-              {router.locale == 'en' ? 'English' : 'Slovenščina'}
-            </a>
+            <a className="navbar-link is-arrowless">{locale[router.locale || 'en']}</a>
 
             <div className="navbar-dropdown is-right">
               <Link href={router.asPath} locale="en">
                 <a className="navbar-item">English</a>
+              </Link>
+              <Link href={router.asPath} locale="de">
+                <a className="navbar-item">Deutsch</a>
               </Link>
               <Link href={router.asPath} locale="sl">
                 <a className="navbar-item">Slovenščina</a>
