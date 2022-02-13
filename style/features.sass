@@ -4,19 +4,112 @@
   +mobile
     font-size: $size-4-mobile
 
-  .column.has-image
-    +tablet
-      max-width: 320px
+  .tile
+    &.is-parent
+      padding: 0
 
-  img.is-feature
-    +tablet
-      max-width: 300px
+  .has-gradient
+    $gradient-left: $brand-secondary
+    $gradient-center: lighten($brand-secondary, 10%)
+    $gradient-right: $brand-primary
+    background-image: linear-gradient(to right, $gradient-left 0%, $gradient-center 29%, $gradient-right 100%)
 
-      &.is-small
-        max-width: 128px
+  .hero
+    .hero-body
+      p
+        text-align: right
 
-    +mobile
-      max-width: 256px
+      .title
+        font-size: $size-2
+        font-variant: small-caps
+        font-weight: 700
+        margin-bottom: 24px
+        text-align: right
 
-      &.is-small
-        max-width: 128px
+        @include mobile
+          font-size: $size-2-mobile
+
+        &:last-child
+          margin-bottom: 0
+
+      .subtitle
+        font-size: $size-4
+        font-weight: 400
+        margin-bottom: 0
+        text-align: right
+
+        @include mobile
+          font-size: $size-4-mobile
+
+    &.is-home
+      .hero-body
+        .title
+          font-size: $size-1
+          margin-bottom: 12px
+
+          @include mobile
+            font-size: $size-1-mobile
+
+        .tagline
+          font-size: $size-4
+          font-weight: 500
+
+          @include mobile
+            font-size: $size-4-mobile
+
+        @include touch
+          padding: 3rem 1.5rem
+
+    &.is-primary
+      .button
+        background-color: rgba(0, 0, 0, 0.6) !important
+
+        &:hover
+          background-color: rgba(0, 0, 0, 0.7) !important
+
+    @include desktop
+      padding: 6rem 3rem
+
+    @include widescreen
+      padding: 12rem 3rem
+
+  .section
+    &:not(.has-text)
+      padding: 1.5rem
+
+      @include desktop
+        padding: 1.5rem 3rem
+
+    &.is-vertical.is-vertical-centered
+      justify-content: center
+
+    .button
+      &:hover
+        background-color: $brand-secondary !important
+
+      &.is-large
+        font-size: $size-3
+        font-weight: 700
+
+        @include mobile
+          font-size: $size-3-mobile
+
+  .tags
+    justify-content: flex-end
+
+    &.are-special
+      .tag
+        background-color: transparent
+        font-size: $size-6
+        margin: 0 0.25rem
+        padding-left: 0.25em
+        padding-right: 0.25em
+
+        @include mobile
+          font-size: $size-6-mobile
+
+        a
+          color: rgba(0, 0, 0, 0.5) !important
+
+          &:hover
+            color: rgba(0, 0, 0, 0.7) !important

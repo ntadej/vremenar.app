@@ -7,7 +7,7 @@ const License: NextPage = () => (
   <Layout title="License">
     <Section title="License" subtitle="Copyright &copy; 2021 Tadej Novak">
       <p>
-        Vremenar is free(libre) software.This means that the application source code is
+        Vremenar is free (libre) software.This means that the application source code is
         available to public, anyone is welcome to research how the application works,
         participate in its development, freely distribute the application and spread the
         word!

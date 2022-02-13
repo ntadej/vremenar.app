@@ -1,5 +1,5 @@
 {
-  "with-version": "Download Vremenar v{{version}}",
+  "download": "Download Vremenar Weather",
   "platform": "Select your platform below",
   "all": "All downloads",
   "also-on": "Also available directly on <a>{{site}}</a>.",

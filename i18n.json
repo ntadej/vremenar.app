@@ -3,6 +3,7 @@
   "defaultLocale": "en",
   "pages": {
     "*": ["common"],
+    "/": ["common", "features"],
     "/download": ["common", "download"],
     "/privacy": ["common", "privacy"],
     "/terms": ["common", "terms"]

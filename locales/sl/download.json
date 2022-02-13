@@ -1,5 +1,5 @@
 {
-  "with-version": "Prenesi Vremenar v{{version}}",
+  "download": "Prenesi Vremenar",
   "platform": "Izberi svojo platformo",
   "all": "Vsi prenosi",
   "also-on": "Na voljo tudi direktno na <a>{{site}}</a>.",

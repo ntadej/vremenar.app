@@ -2,8 +2,10 @@ import { FunctionComponent, createRef } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import NavItems from 'components/NavItems'
+import useTranslation from 'next-translate/useTranslation'
 
 const Navigation: FunctionComponent = () => {
+  const { t } = useTranslation('common')
   const router = useRouter()
   const burger = createRef<HTMLDivElement>()
   const nav = createRef<HTMLDivElement>()
@@ -27,7 +29,8 @@ const Navigation: FunctionComponent = () => {
         <div className="navbar-brand">
           <Link href="/">
             <a className="navbar-item is-brand">
-              <span className="logo"></span>Vremenar
+              <span className="logo"></span>
+              {t('vremenar')}
             </a>
           </Link>
 

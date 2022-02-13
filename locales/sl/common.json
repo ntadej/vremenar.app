@@ -1,13 +1,14 @@
 {
-  "about": "O programu",
+  "vremenar": "Vremenar",
+  "features": "Funkcije",
   "download": "Prenesi",
+  "download-allcaps": "PRENESI",
   "license": "Licenca",
   "privacy": "Politika zasebnosti",
   "terms": "Pogoji uporabe",
   "language": "Jezik",
   "tagline": "Preprosto in hitro si oglej vreme in vremensko napoved na zemljevidu.",
-  "scroll-for-more": "Pomakni se dalje za več informacij",
-  "no-stable": "Brez stabilne različice",
+  "available-for": "Na voljo za:",
   "github": "Sledi razvoju na GitHubu",
   "legal": "Linux je blagovna znamka Linusa Torvaldsa. macOS, iPhone in iPad so blagovne znamke podjetja Apple Inc. Microsoft, Windows sta blagovni znamki skupine Microsoft. Google Play in logotip Googla Play sta blagovni znamki podjetja Google LLC."
 }

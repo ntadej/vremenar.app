@@ -87,7 +87,7 @@ const Download: NextPage = () => {
   return (
     <Layout title={t('download')}>
       <Section
-        title={t('download:with-version', { version: testingVersion })}
+        title={t('download:download', { version: testingVersion })}
         subtitle={t('download:platform')}
       >
         <div className="columns">

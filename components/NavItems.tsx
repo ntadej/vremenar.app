@@ -9,11 +9,9 @@ const NavItems: FunctionComponent = () => {
 
   return (
     <div className="navbar-start">
-      {/* <Link href="/about">
-      <a className="navbar-item">
-        {t('about')}
-      </a>
-    </Link> */}
+      <Link href="/">
+        <a className="navbar-item">{t('features')}</a>
+      </Link>
       <Link href="/download">
         <a className="navbar-item">{t('download')}</a>
       </Link>
