@@ -73,7 +73,7 @@ const Download: NextPage = () => {
         components={{
           a: (
             <a
-              href={`https://github.com/ntadej/Vremenar/releases/download/v${testingVersion}`}
+              href={`https://github.com/ntadej/Vremenar/releases/v${testingVersion}`}
             />
           ),
         }}
@@ -94,7 +94,7 @@ const Download: NextPage = () => {
           <div className="column is-one-third has-text-centered">
             <h2>macOS</h2>
             <p className="narrow badge">
-              <a href="">
+              <a href="https://apps.apple.com/us/app/vremenar-weather/id1605380775#?platform=mac">
                 <Image
                   alt={t('download:badge-mac-app-store')}
                   src={macAppStoreBadge[lang]}
@@ -124,7 +124,9 @@ const Download: NextPage = () => {
           <div className="column is-one-third has-text-centered">
             <h2>Windows</h2>
             <p className="narrow badge">
-              <a href="">
+              <a
+                href={`https://github.com/ntadej/Vremenar/releases/download/v${testingVersion}/Vremenar_${testingVersion}_win64.exe`}
+              >
                 <Image
                   alt={t('download:badge-github')}
                   src={githubBadge[lang]}
@@ -140,7 +142,7 @@ const Download: NextPage = () => {
           <div className="column is-one-third has-text-centered">
             <h2>iOS</h2>
             <p className="narrow badge">
-              <a href="">
+              <a href="https://apps.apple.com/us/app/vremenar-weather/id1605380775#?platform=iphone">
                 <Image
                   alt={t('download:badge-app-store')}
                   src={appStoreBadge[lang]}
