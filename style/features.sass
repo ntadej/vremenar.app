@@ -4,6 +4,9 @@
   +mobile
     font-size: $size-4-mobile
 
+  &.tile.is-ancestor
+    margin: 0 !important
+
   .tile
     &.is-parent
       padding: 0
@@ -22,7 +25,7 @@
       .title
         font-size: $size-2
         font-variant: small-caps
-        font-weight: 700
+        font-weight: $weight-bold
         margin-bottom: 24px
         text-align: right
 
@@ -34,7 +37,6 @@
 
       .subtitle
         font-size: $size-4
-        font-weight: 400
         margin-bottom: 0
         text-align: right
 
@@ -52,7 +54,7 @@
 
         .tagline
           font-size: $size-4
-          font-weight: 500
+          font-weight: $weight-medium
 
           @include mobile
             font-size: $size-4-mobile
@@ -61,6 +63,9 @@
           padding: 3rem 1.5rem
 
     &.is-primary
+      .subtitle
+        color: rgba(0, 0, 0, 0.7)
+
       .button
         background-color: rgba(0, 0, 0, 0.6) !important
 
@@ -80,8 +85,14 @@
       @include desktop
         padding: 1.5rem 3rem
 
+    &.has-text
+      padding-top: 3rem !important
+
     &.is-vertical.is-vertical-centered
       justify-content: center
+
+    p.is-plain
+      margin-bottom: 0
 
     .button
       &:hover
@@ -89,7 +100,7 @@
 
       &.is-large
         font-size: $size-3
-        font-weight: 700
+        font-weight: $weight-bold
 
         @include mobile
           font-size: $size-3-mobile

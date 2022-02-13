@@ -108,7 +108,7 @@ const Home: NextPage = () => {
           </section>
         </div>
 
-        <div className="tile is-parent is-6">
+        <div className="tile is-parent is-6 is-hidden-mobile">
           <section className="tile section is-vertical-centered special-background"></section>
         </div>
       </div>
@@ -168,9 +168,11 @@ const Home: NextPage = () => {
         subtitle={t('features:download-subtitle')}
         hasText={true}
       >
-        <Link href="/download">
-          <a className="button is-large is-primary">{t('download-allcaps')}</a>
-        </Link>
+        <p className="is-plain has-text-centered">
+          <Link href="/download">
+            <a className="button is-large is-primary">{t('download-allcaps')}</a>
+          </Link>
+        </p>
       </FeatureSection>
 
       <Footer />

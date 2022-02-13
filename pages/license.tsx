@@ -15,7 +15,7 @@ const License: NextPage = () => (
 
       <p>The project is bi - licensed.</p>
 
-      <h2 className="title">GNU General Public License Version 3.0</h2>
+      <h3 className="title">GNU General Public License Version 3.0</h3>
 
       <p>
         This program is free software: you can redistribute it and / or modify it under
@@ -34,7 +34,7 @@ const License: NextPage = () => (
         for more details.
       </p>
 
-      <h2>Mozilla Public License Version 2.0</h2>
+      <h3>Mozilla Public License Version 2.0</h3>
 
       <p>
         This Source Code Form is subject to the terms of the Mozilla Public License, v.
@@ -45,7 +45,7 @@ const License: NextPage = () => (
         .
       </p>
 
-      <h2>Note on the Copyright Notices</h2>
+      <h3>Note on the Copyright Notices</h3>
 
       <p>
         Individual files contain the following tag instead of the full license text.

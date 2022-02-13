@@ -92,7 +92,7 @@ const Download: NextPage = () => {
       >
         <div className="columns">
           <div className="column is-one-third has-text-centered">
-            <h2>macOS</h2>
+            <h3>macOS</h3>
             <p className="narrow badge">
               <a href="https://apps.apple.com/us/app/vremenar-weather/id1605380775#?platform=mac">
                 <Image
@@ -107,7 +107,7 @@ const Download: NextPage = () => {
             {AvailableAlsoOnGithub}
           </div>
           <div className="column is-one-third has-text-centered">
-            <h2>Linux</h2>
+            <h3>Linux</h3>
             <p className="narrow badge">
               <a href="https://flathub.org/apps/details/si.tano.Vremenar">
                 <Image
@@ -122,7 +122,7 @@ const Download: NextPage = () => {
             {AvailableAlsoOnGithub}
           </div>
           <div className="column is-one-third has-text-centered">
-            <h2>Windows</h2>
+            <h3>Windows</h3>
             <p className="narrow badge">
               <a
                 href={`https://github.com/ntadej/Vremenar/releases/download/v${testingVersion}/Vremenar_${testingVersion}_win64.exe`}
@@ -140,7 +140,7 @@ const Download: NextPage = () => {
         </div>
         <div className="columns">
           <div className="column is-one-third has-text-centered">
-            <h2>iOS</h2>
+            <h3>iOS</h3>
             <p className="narrow badge">
               <a href="https://apps.apple.com/us/app/vremenar-weather/id1605380775#?platform=iphone">
                 <Image
@@ -154,7 +154,7 @@ const Download: NextPage = () => {
             </p>
           </div>
           <div className="column is-one-third has-text-centered">
-            <h2>Android &amp; Android TV</h2>
+            <h3>Android &amp; Android TV</h3>
             <p className="narrow badge google">
               <a
                 href={`https://play.google.com/store/apps/details?id=si.tano.Vremenar&hl=${lang}&utm_source=Website&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1`}
@@ -182,7 +182,7 @@ const Download: NextPage = () => {
             {AvailableAlsoOnGithub}
           </div>
           <div className="column is-one-third has-text-centered">
-            <h2>{t('download:all')}</h2>
+            <h3>{t('download:all')}</h3>
             <p className="narrow badge">
               <a
                 href={`https://github.com/ntadej/Vremenar/releases/v${testingVersion}`}
