@@ -14,7 +14,7 @@ const Layout: FunctionComponent<Props> = ({ children, title }) => {
 
   return (
     <div>
-      <HeadSetup title={title} siteTitle={t('vremenar')} siteColor="#FFDB4F" />
+      <HeadSetup title={title} siteName={t('vremenar')} />
       <Navigation />
       {children}
       <Footer />

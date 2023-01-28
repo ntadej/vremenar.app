@@ -50,7 +50,7 @@ const Home: NextPage = () => {
 
   return (
     <div>
-      <HeadSetup title="" siteTitle={t('vremenar')} siteColor="#FFDB4F" />
+      <HeadSetup title="" siteName={t('vremenar')} />
 
       <div className="tile is-ancestor features">
         <div className="tile is-parent is-6">

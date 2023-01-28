@@ -13,8 +13,6 @@ const ErrorPage: NextPage<Props> = ({ statusCode }) => (
         ? `An error ${statusCode} occurred on server`
         : 'An error occurred on client'
     }
-    siteTitle="Vremenar"
-    siteColor="#FFDB4F"
   />
 )
 
