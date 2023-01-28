@@ -27,11 +27,9 @@ const Navigation: FunctionComponent = () => {
     >
       <div className="container">
         <div className="navbar-brand">
-          <Link href="/">
-            <a className="navbar-item is-brand">
-              <span className="logo"></span>
-              {t('vremenar')}
-            </a>
+          <Link href="/" passHref className="navbar-item is-brand">
+            <span className="logo"></span>
+            {t('vremenar')}
           </Link>
 
           <div ref={burger} className="burger navbar-burger" onClick={burgerClicked}>
@@ -52,11 +50,11 @@ const Navigation: FunctionComponent = () => {
             </a>
 
             <div className="navbar-dropdown is-right">
-              <Link href={router.asPath} locale="en">
-                <a className="navbar-item">English</a>
+              <Link href={router.asPath} locale="en" className="navbar-item">
+                English
               </Link>
-              <Link href={router.asPath} locale="sl">
-                <a className="navbar-item">Slovenščina</a>
+              <Link href={router.asPath} locale="sl" className="navbar-item">
+                Slovenščina
               </Link>
             </div>
           </div>

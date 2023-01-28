@@ -3,7 +3,7 @@ import { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import FeatureSection from 'components/FeatureSection'
 import Footer from 'components/Footer'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Link from 'next/link'
 import useTranslation from 'next-translate/useTranslation'
 
@@ -64,14 +64,15 @@ const Home: NextPage = () => {
               <p className="tagline">{t('tagline')}</p>
 
               <p>
-                <Link href="/download">
-                  <a className="button is-large is-primary is-inverted">
-                    {t('download')}
-                  </a>
+                <Link
+                  href="/download"
+                  className="button is-large is-primary is-inverted"
+                >
+                  {t('download')}
                 </Link>
               </p>
 
-              <p>
+              <div className="like-p">
                 <div className="tags are-special">
                   <span className="tag is-primary">{t('available-for')}</span>
                   <span className="tag is-primary">macOS</span>
@@ -80,28 +81,24 @@ const Home: NextPage = () => {
                   <span className="tag is-primary">Linux</span>
                   <span className="tag is-primary">Windows</span>
                 </div>
-              </p>
+              </div>
 
-              <p>
+              <div className="like-p">
                 <div className="tags are-special">
                   <span className="tag is-primary">
                     <a href="https://github.com/ntadej/Vremenar">{t('github')}</a>
                   </span>
                   <span className="tag is-primary">
-                    <Link href="/license">
-                      <a>{t('license')}</a>
-                    </Link>
+                    <Link href="/license">{t('license')}</Link>
                   </span>
                   <span className="tag is-primary">
                     <Link href="/language">
-                      <a>
-                        {t('language')} (
-                        {router.locale == 'en' ? 'English' : 'Slovenščina'})
-                      </a>
+                      {t('language')}(
+                      {router.locale == 'en' ? 'English' : 'Slovenščina'})
                     </Link>
                   </span>
                 </div>
-              </p>
+              </div>
             </div>
 
             <div className="hero-foot"></div>
@@ -169,8 +166,8 @@ const Home: NextPage = () => {
         hasText={true}
       >
         <p className="is-plain has-text-centered">
-          <Link href="/download">
-            <a className="button is-large is-primary">{t('download-allcaps')}</a>
+          <Link href="/download" className="button is-large is-primary">
+            {t('download-allcaps')}
           </Link>
         </p>
       </FeatureSection>

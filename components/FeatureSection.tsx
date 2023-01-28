@@ -1,6 +1,7 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
 type Props = {
+  children: ReactNode
   title: string
   subtitle?: string
   hasText?: boolean

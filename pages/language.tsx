@@ -14,25 +14,25 @@ const Language: NextPage = () => {
       <Section title={t('language')} subtitle="">
         <div className="has-text-centered">
           <p>
-            <Link href={router.asPath} locale="en">
-              <a
-                className={
-                  'button is-large' + (router.locale == 'en' ? ' is-active' : '')
-                }
-              >
-                English
-              </a>
+            <Link
+              href={router.asPath}
+              locale="en"
+              className={
+                'button is-large' + (router.locale == 'en' ? ' is-active' : '')
+              }
+            >
+              English
             </Link>
           </p>
           <p>
-            <Link href={router.asPath} locale="sl">
-              <a
-                className={
-                  'button is-large' + (router.locale == 'sl' ? ' is-active' : '')
-                }
-              >
-                Slovenščina
-              </a>
+            <Link
+              href={router.asPath}
+              locale="sl"
+              className={
+                'button is-large' + (router.locale == 'sl' ? ' is-active' : '')
+              }
+            >
+              Slovenščina
             </Link>
           </p>
         </div>

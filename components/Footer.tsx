@@ -8,18 +8,12 @@ const Footer: FunctionComponent = () => {
 
   return (
     <FooterBase extra={t('legal')}>
-      <Link href="/download">
-        <a>{t('download')}</a>
-      </Link>
+      <Link href="/download">{t('download')}</Link>
       {/* <Link href="/about">
       <a>{t('about')}</a>
     </Link> */}
-      <Link href="/terms">
-        <a>{t('terms')}</a>
-      </Link>
-      <Link href="/privacy">
-        <a>{t('privacy')}</a>
-      </Link>
+      <Link href="/terms">{t('terms')}</Link>
+      <Link href="/privacy">{t('privacy')}</Link>
     </FooterBase>
   )
 }

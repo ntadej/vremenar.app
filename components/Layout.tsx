@@ -1,10 +1,11 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 import { HeadSetup } from '@ntadej/style'
 import Footer from 'components/Footer'
 import Navigation from 'components/Navigation'
 import useTranslation from 'next-translate/useTranslation'
 
 type Props = {
+  children: ReactNode
   title: string
 }
 

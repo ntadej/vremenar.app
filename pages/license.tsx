@@ -28,21 +28,14 @@ const License: NextPage = () => (
         This program is distributed in the hope that it will be useful, but WITHOUT ANY
         WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
         PARTICULAR PURPOSE. See the{' '}
-        <Link href="/license/gpl">
-          <a>GNU General Public License</a>
-        </Link>{' '}
-        for more details.
+        <Link href="/license/gpl">GNU General Public License</Link> for more details.
       </p>
 
       <h3>Mozilla Public License Version 2.0</h3>
 
       <p>
         This Source Code Form is subject to the terms of the Mozilla Public License, v.
-        2.0, available{' '}
-        <Link href="/license/mpl">
-          <a>here</a>
-        </Link>
-        .
+        2.0, available <Link href="/license/mpl">here</Link>.
       </p>
 
       <h3>Note on the Copyright Notices</h3>

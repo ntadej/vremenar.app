@@ -9,16 +9,14 @@ const NavItems: FunctionComponent = () => {
 
   return (
     <div className="navbar-start">
-      <Link href="/">
-        <a className="navbar-item">{t('features')}</a>
+      <Link href="/" className="navbar-item">
+        {t('features')}
       </Link>
-      <Link href="/download">
-        <a className="navbar-item">{t('download')}</a>
+      <Link href="/download" className="navbar-item">
+        {t('download')}
       </Link>
-      <Link href="/language">
-        <a className="navbar-item is-hidden-desktop">
-          {t('language')} ({router.locale == 'en' ? 'English' : 'Slovenščina'})
-        </a>
+      <Link href="/language" className="navbar-item is-hidden-desktop">
+        {t('language')}({router.locale == 'en' ? 'English' : 'Slovenščina'})
       </Link>
     </div>
   )
