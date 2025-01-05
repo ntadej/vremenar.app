@@ -4,7 +4,16 @@ import { MetadataRoute } from 'next'
 import { Locale } from 'next-intl'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [getEntry('/'), getEntry('/download')]
+  return [
+    getEntry('/'),
+    getEntry('/download'),
+    getEntry('/language'),
+    getEntry('/license'),
+    getEntry('/license/gpl'),
+    getEntry('/license/mpl'),
+    getEntry('/privacy'),
+    getEntry('/terms'),
+  ]
 }
 
 type Href = Parameters<typeof getPathname>[0]['href']
