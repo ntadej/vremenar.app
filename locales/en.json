@@ -1,6 +1,7 @@
 {
   "common": {
     "vremenar": "Vremenar Weather",
+    "title": "Radar & precipitation",
     "features": "Features",
     "download": "Download",
     "download-allcaps": "DOWNLOAD",

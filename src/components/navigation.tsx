@@ -1,22 +1,21 @@
 'use client'
+
 import { availableLocales } from '@/i18n/common'
 import { Link, usePathname, useRouter } from '@/i18n/routing'
-import { Navigation as NavigationCore } from '@ntadej/style'
+import {
+  NavigationControls as NavigationControlsCore,
+  Navigation as NavigationCore,
+} from '@ntadej/style'
 import type { LocaleSetup } from '@ntadej/style/types'
 import { useLocale, useTranslations } from 'next-intl'
 import { useParams } from 'next/navigation'
 
-export function Navigation() {
+export function Navigation({ controlsOnly }: { controlsOnly?: boolean }) {
   const router = useRouter()
   const pathname = usePathname()
   const params = useParams()
   const locale = useLocale() as string
   const t = useTranslations('common')
-
-  const navigation = [
-    { name: t('features'), href: '/' },
-    { name: t('download'), href: '/download' },
-  ]
 
   function onLocaleChange(nextLocale: string) {
     router.replace(
@@ -33,6 +32,15 @@ export function Navigation() {
     available: availableLocales,
     callback: onLocaleChange,
   }
+
+  if (controlsOnly) {
+    return <NavigationControlsCore localeSetup={localeSetup} />
+  }
+
+  const navigation = [
+    { name: t('features'), href: '/' },
+    { name: t('download'), href: '/download' },
+  ]
 
   return (
     <NavigationCore

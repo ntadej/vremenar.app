@@ -1,6 +1,8 @@
 import { LinkButtonStyled } from '@/components/buttons'
 import FeatureBlock from '@/components/features'
 import Footer from '@/components/footer'
+import { Navigation } from '@/components/navigation'
+import { getMetadata } from '@/i18n/helpers'
 import { Link } from '@/i18n/routing'
 import { GitHubCorner, LinkButton } from '@ntadej/style'
 import clsx from 'clsx'
@@ -19,14 +21,12 @@ import style_de from '@/resources/features/style_de.png'
 import style_en from '@/resources/features/style_en.png'
 import style_sl from '@/resources/features/style_sl.png'
 
-import { getMetadata } from '@/i18n/helpers'
-
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: Locale }>
 }): Promise<{ title: string }> {
-  return getMetadata(params, 'tagline')
+  return getMetadata(params, 'title')
 }
 
 export default async function Home({
@@ -79,8 +79,9 @@ export default async function Home({
           )}
         >
           <GitHubCorner href="https://github.com/ntadej/Vremenar" />
+          <Navigation controlsOnly={true} />
 
-          <p className="mb-2 text-5xl font-bold opacity-70 small-caps">
+          <p className="mb-2 mt-12 text-5xl font-bold opacity-70 small-caps lg:mt-0">
             {c('vremenar')}
           </p>
           <p className="mb-8 text-2xl font-medium opacity-70">{c('tagline')}</p>
