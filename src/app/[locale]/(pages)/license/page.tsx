@@ -1,7 +1,16 @@
+import { getMetadata } from '@/i18n/helpers'
 import { Link } from '@/i18n/routing'
 import { Content, Section } from '@ntadej/style'
 import { Locale } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>
+}): Promise<{ title: string }> {
+  return getMetadata(params, 'license')
+}
 
 export default async function License({
   params,

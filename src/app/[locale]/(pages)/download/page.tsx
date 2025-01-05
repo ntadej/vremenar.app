@@ -1,5 +1,6 @@
 import { DownloadBlock } from '@/components/downloads'
 import { testingVersion } from '@/constants'
+import { getMetadata } from '@/i18n/helpers'
 import { Section } from '@ntadej/style'
 import { Locale } from 'next-intl'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
@@ -25,6 +26,14 @@ import googlePlayBadge_sl from '@/resources/badges/google-play_sl.png'
 import macAppStoreBadge_de from '@/resources/badges/apple-mac-app-store_de.svg'
 import macAppStoreBadge_en from '@/resources/badges/apple-mac-app-store_en.svg'
 import macAppStoreBadge_sl from '@/resources/badges/apple-mac-app-store_sl.svg'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>
+}): Promise<{ title: string }> {
+  return getMetadata(params, 'download')
+}
 
 export default async function Terms({
   params,

@@ -1,6 +1,15 @@
+import { getMetadata } from '@/i18n/helpers'
 import { Content, Section } from '@ntadej/style'
 import { Locale } from 'next-intl'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>
+}): Promise<{ title: string }> {
+  return getMetadata(params, 'privacy')
+}
 
 export default async function Privacy({
   params,

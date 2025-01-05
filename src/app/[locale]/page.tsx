@@ -19,6 +19,16 @@ import style_de from '@/resources/features/style_de.png'
 import style_en from '@/resources/features/style_en.png'
 import style_sl from '@/resources/features/style_sl.png'
 
+import { getMetadata } from '@/i18n/helpers'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>
+}): Promise<{ title: string }> {
+  return getMetadata(params, 'tagline')
+}
+
 export default async function Home({
   params,
 }: {
