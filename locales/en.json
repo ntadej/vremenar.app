@@ -1,0 +1,57 @@
+{
+  "common": {
+    "vremenar": "Vremenar Weather",
+    "features": "Features",
+    "download": "Download",
+    "download-allcaps": "DOWNLOAD",
+    "license": "License",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "language": "Language",
+    "tagline": "Display weather conditions and forecast on a map in a quick and simple way.",
+    "available-for": "Available for:",
+    "github": "Follow development on GitHub",
+    "legal": "Linux is a registered trademark of Linus Torvalds. macOS, iPhone and iPad are trademarks of Apple Inc. Microsoft, Windows are trademarks of the Microsoft group of companies. Google Play and the Google Play logo are trademarks of Google LLC."
+  },
+  "features": {
+    "conditions": "Weather conditions on a map",
+    "conditions-subtitle": "Recent observation and forecast for many days ahead. Weather data is provided by Slovenian Environment Agency (ARSO) and Deutscher Wetterdienst (DWD).",
+    "conditions-alt": "Weather conditions",
+    "precipitation": "Do not go out without an umbrella",
+    "precipitation-subtitle": "Precipitation radar with 5 minute resolution. Includes rain forecast for Germany.",
+    "precipitation-alt": "Precipitation",
+    "styles": "Multiple map styles",
+    "styles-subtitle": "Choose between satellite imagery and light or dark streets.",
+    "styles-alt": "Map styles",
+    "other": "Many other maps",
+    "other-subtitle": "Including temperature, cloud coverage (Slovenia only), wind speed (Slovenia only), UV radiation (Germany only) and hail probability (Slovenia only).",
+    "other-alt": "Cloud coverage",
+    "download": "Download for your favourite platform",
+    "download-subtitle": "Available for macOS, iOS, Android, Linux and Windows."
+  },
+  "download": {
+    "download": "Download Vremenar Weather",
+    "platform": "Select your platform below",
+    "all": "All downloads",
+    "also-on": "Also available directly on <github>GitHub</github>.",
+
+    "badge-amazon-app-store": "available at amazon appstore",
+    "badge-app-store": "Download on the App Store",
+    "badge-flathub": "Download On Flathub",
+    "badge-github": "Get it on GitHub",
+    "badge-google-play": "Get it on Google Play",
+    "badge-mac-app-store": "Download on the Mac App Store"
+  },
+  "privacy": {
+    "privacy": "Privacy Policy",
+    "analytics": "The application queries Vremenar server for weather information. During the process anonymous information about the operating system, platform and device used may be collected. No personal information about the user is recorded.",
+    "location": "An user may choose to enable location services to provide local weather information and location indicator on the map. This information is never stored on our servers or used in any way to locate the users but may be used to find the closest available weather source."
+  },
+  "terms": {
+    "terms": "Terms of Service",
+    "general": "Information, provided by the \"Vremenar Weather\" application is for informational use. It is not possible to fully guarantee the timeliness, accuracy, reliability and completeness of the information published.",
+    "unpredictable": "Because of the nature of the meteorological and related natural phenomena, it is impossible to predict all extraordinary natural phenomena, and there may be deviations from actual developments.",
+    "liability": "Both the developers and weather sources shall not be liable for any direct or indirect damage or inconvenience resulting from access, use or decision taken on the basis of the information published in the application.",
+    "availability": "The application is provided as is for free. As internet access is required for it to work, it may stop working at any time due to technical or operational issues. During the testing period old versions of the app can stop working."
+  }
+}

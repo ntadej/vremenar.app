@@ -1,4 +1,0 @@
-{
-  "analytics": "Aplikacija uporablja lastne strežnike za dostop do informacij o vremenu. Anonimni podatki o operacijskem sistemu, platformi in/ali napravi se ob tem lahko zabeležijo za statistične namene. Ob tem se ne zbira noben osebni podatek o uporabniku.",
-  "location": "Uporabnik se lahko odloči vključiti lokacijske storitve ob uporabi aplikacije za dostop do lokalnega vremena in položaja na zemljevidu. Ta informacija se ne shranjuje na strežniku ali kakorkoli uporablja za lociranje uporabnika, se pa uporabi za iskanje najbližjega vira vremenskih podatkov."
-}

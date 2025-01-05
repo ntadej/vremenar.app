@@ -1,11 +1,4 @@
 {
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[sass]": {
-    "editor.defaultFormatter": "syler.sass-indented"
-  },
-  "stylelint.validate": ["sass"]
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

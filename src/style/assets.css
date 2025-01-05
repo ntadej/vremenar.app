@@ -1,0 +1,23 @@
+nav .logo {
+  background: url('logo/logo.png') no-repeat center;
+  height: 36px;
+  width: 36px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5),
+  (min-resolution: 1.5dppx),
+  (min-resolution: 144dpi) {
+  nav .logo {
+    background-image: url('logo/logo@2x.png');
+    background-size: 36px 36px;
+  }
+}
+
+.download-google {
+  margin-top: -16px;
+}
+
+.special-background {
+  background: url('special/background.jpg') no-repeat right;
+  background-size: cover;
+}

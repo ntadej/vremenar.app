@@ -1,44 +1,54 @@
 {
-  "name": "@tano/vremenar",
-  "version": "0.1.0",
+  "name": "@ntadej/vremenar",
+  "version": "1.0.0",
+  "description": "Vremenar application webpage",
+  "license": "CC-BY-SA-4.0",
+  "author": "Tadej Novak <tadej@tano.si>",
+  "homepage": "https://vremenar.app",
   "private": true,
   "scripts": {
-    "lint-eslint": "next lint",
-    "lint-eslint-fix": "next lint --fix --max-warnings=0",
-    "lint-sass": "stylelint \"**/*.sass\"",
-    "lint-typescript": "tsc --noEmit --declaration",
-    "prettier-check": "prettier --check . --loglevel warn",
-    "prettier-fix": "prettier --write .",
-    "lint-fix": "run-s prettier-fix lint-eslint-fix",
-    "lint": "run-p lint-typescript prettier-check lint-eslint lint-sass",
+    "prepare": "husky",
+    "lint:next": "next lint",
+    "lint:prettier": "prettier --check . --log-level warn",
+    "lint:ts": "tsc --noEmit --declaration",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
-  "pre-commit": [
-    "lint"
-  ],
   "dependencies": {
-    "@ntadej/style": "0.4.0",
-    "@vercel/analytics": "^0.1.8",
-    "next": "~13.1.6",
-    "next-translate": "^1.6.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sass": "^1.57.1"
+    "@ntadej/style": "github:ntadej/tano-style#updates",
+    "clsx": "^2.1.1",
+    "next": "~15.1.3",
+    "next-intl": "4.0.0-beta-ddd5ae5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@types/node": "^18.11.18",
-    "@types/react": "^18.0.27",
-    "eslint": "^8.32.0",
-    "eslint-config-next": "^13.1.6",
-    "npm-run-all": "~4.1.5",
-    "postcss-sass": "~0.5.0",
-    "pre-commit": "~1.2.2",
-    "prettier": "2.8.3",
-    "stylelint": "~14.16.1",
-    "stylelint-config-sass-guidelines": "~9.0.1",
-    "stylelint-scss": "~4.3.0",
-    "typescript": "^4.9.4"
-  }
+    "@eslint/eslintrc": "^3.2.0",
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "~15.1.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
+    "postcss": "^8.4.49",
+    "prettier": "3.4.2",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "prettier-plugin-tailwindcss": "~0.6.9",
+    "tailwindcss": "~3.4.17",
+    "tailwindcss-opentype": "^1.1.0",
+    "typescript": "^5.7.2"
+  },
+  "lint-staged": {
+    "*.{js,cjs,mjs,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix --max-warnings=0"
+    ],
+    "*.{cjs,css,json,md,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321"
 }

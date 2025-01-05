@@ -1,2 +1,3 @@
 # Ignore generated files
 .next
+pnpm-lock.yaml

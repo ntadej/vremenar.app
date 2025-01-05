@@ -1,0 +1,16 @@
+{
+  "download": {
+    "download": "Download Vremenar Weather",
+    "platform": "Select your platform below",
+    "all": "All downloads",
+    "also-on": "Also available directly on <a>{{site}}</a>.",
+    "also-on-github": "GitHub",
+
+    "badge-amazon-app-store": "erhältlich bei amazon appstore",
+    "badge-app-store": "Laden im App Store",
+    "badge-flathub": "Laden im Flathub",
+    "badge-github": "Laden im GitHub",
+    "badge-google-play": "Jetzt bei Google Play",
+    "badge-mac-app-store": "Laden im Mac App Store"
+  }
+}

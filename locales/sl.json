@@ -1,0 +1,57 @@
+{
+  "common": {
+    "vremenar": "Vremenar",
+    "features": "Funkcije",
+    "download": "Prenesi",
+    "download-allcaps": "PRENESI",
+    "license": "Licenca",
+    "privacy": "Politika zasebnosti",
+    "terms": "Pogoji uporabe",
+    "language": "Jezik",
+    "tagline": "Preprosto in hitro si oglej vreme in vremensko napoved na zemljevidu.",
+    "available-for": "Na voljo za:",
+    "github": "Sledi razvoju na GitHubu",
+    "legal": "Linux je blagovna znamka Linusa Torvaldsa. macOS, iPhone in iPad so blagovne znamke podjetja Apple Inc. Microsoft, Windows sta blagovni znamki skupine Microsoft. Google Play in logotip Googla Play sta blagovni znamki podjetja Google LLC."
+  },
+  "features": {
+    "conditions": "Vremenske razmere na zemljevidu",
+    "conditions-subtitle": "Trenutne meritve in napovedi za več dni v naprej. Podprti viri so Agencija Republike Slovenije za okolje (ARSO) in Deutscher Wetterdienst (DWD).",
+    "conditions-alt": "Vremenske razmere",
+    "precipitation": "Ne zapusti doma brez dežnika",
+    "precipitation-subtitle": "Radar padavin s pet minutno natančnostjo. Vsebuje tudi napoved padavin za Nemčijo.",
+    "precipitation-alt": "Padavine",
+    "styles": "Več stilov zemljevida",
+    "styles-subtitle": "Izberi med satelitsko sliko ter svetlim in temnim zemljevidom.",
+    "styles-alt": "Stili",
+    "other": "Veliko različnih vsebin",
+    "other-subtitle": "Vključno s temperaturo, oblačnostjo (le Slovenija), hitrostjo vetra (le Slovenija), UV žarčenjem (le Nemčija) in verjetnostjo toče (le Slovenija).",
+    "other-alt": "Oblačnost",
+    "download": "Prenesi na svojo priljubljeno platformo",
+    "download-subtitle": "Na voljo za macOS, iOS, Android, Linux in Windows."
+  },
+  "download": {
+    "download": "Prenesi Vremenar",
+    "platform": "Izberi svojo platformo",
+    "all": "Vsi prenosi",
+    "also-on": "Na voljo tudi direktno na <github>GitHubu</github>.",
+
+    "badge-amazon-app-store": "Na voljo v amazon appstore",
+    "badge-app-store": "Prenos iz App Store",
+    "badge-flathub": "Prenos iz Flathuba",
+    "badge-github": "Prenos iz GitHuba",
+    "badge-google-play": "Na voljo v Google Play",
+    "badge-mac-app-store": "Prenos iz Mac App Store"
+  },
+  "privacy": {
+    "privacy": "Politika zasebnosti",
+    "analytics": "Aplikacija uporablja lastne strežnike za dostop do informacij o vremenu. Anonimni podatki o operacijskem sistemu, platformi in/ali napravi se ob tem lahko zabeležijo za statistične namene. Ob tem se ne zbira noben osebni podatek o uporabniku.",
+    "location": "Uporabnik se lahko odloči vključiti lokacijske storitve ob uporabi aplikacije za dostop do lokalnega vremena in položaja na zemljevidu. Ta informacija se ne shranjuje na strežniku ali kakorkoli uporablja za lociranje uporabnika, se pa uporabi za iskanje najbližjega vira vremenskih podatkov."
+  },
+  "terms": {
+    "terms": "Pogoji uporabe",
+    "general": "Informacije, objavljene v aplikaciji \"Vremenar\" so informativne narave. Ni mogoče v celoti zagotoviti pravočasnosti, točnosti, zanesljivosti in popolnosti objavljenih informacij.",
+    "unpredictable": "Zaradi narave meteoroloških in z njimi povezanih naravnih pojavov ni mogoče napovedati vseh izrednih naravne pojave, prav tako lahko prihaja do odstopanj napovedi in opozoril od dejanskega razvoja dogodkov.",
+    "liability": "Tako avtorji aplikacije, kot sami viri podatkov, ne prevzemajo odgovornosti za neposredno ali posredno izgubo oziroma škodo, materialno in nematerialno, ki bi nastala zaradi dostopa, uporabe ali odločitve sprejete na podlagi informacij objavljenih v aplikaciji.",
+    "availability": "Aplikacija je na voljo brezplačno. Za svoje delovanje potrebuje internetno povezavo, zaradi česar lahko preneha delovati kadarkoli zaradi tehničnih ali operativnih težav. V času testnega obdobja lahko starejše različice prenehajo delovati."
+  }
+}
