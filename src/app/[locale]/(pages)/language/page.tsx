@@ -1,8 +1,9 @@
 'use client'
 // TODO: Implement the language switcher as a component
+import { ActionButtonStyled } from '@/components/buttons'
 import { availableLocales } from '@/i18n/common'
 import { usePathname, useRouter } from '@/i18n/routing'
-import { ActionButton, Section } from '@ntadej/style'
+import { Section } from '@ntadej/style'
 import { useLocale, useTranslations } from 'next-intl'
 import { useParams } from 'next/navigation'
 
@@ -28,12 +29,12 @@ export default function Language() {
       <div className="text-center">
         {availableLocales.map((locale) => (
           <p key={locale.id} className="mb-2">
-            <ActionButton
+            <ActionButtonStyled
               onClick={() => onLocaleChange(locale.id)}
               disabled={locale.id === currentLocale}
             >
               {locale.name}
-            </ActionButton>
+            </ActionButtonStyled>
           </p>
         ))}
       </div>

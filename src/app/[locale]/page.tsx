@@ -1,3 +1,4 @@
+import { LinkButtonStyled } from '@/components/buttons'
 import FeatureBlock from '@/components/features'
 import Footer from '@/components/footer'
 import { Link } from '@/i18n/routing'
@@ -66,8 +67,13 @@ export default function Home() {
           </p>
           <p className="mb-8 text-2xl font-medium opacity-70">{c('tagline')}</p>
 
-          <p className="mb-8">
-            <LinkButton href="/download" linkType={Link}>
+          <p className="mb-12">
+            <LinkButton
+              href="/download"
+              linkType={Link}
+              text="text-xl"
+              colors="bg-black/50 hover:bg-black/60 text-special1"
+            >
               {c('download')}
             </LinkButton>
           </p>
@@ -145,10 +151,10 @@ export default function Home() {
       </FeatureBlock>
 
       <FeatureBlock title={t('download')} subtitle={t('download-subtitle')}>
-        <p className="is-plain has-text-centered">
-          <LinkButton href="/download" linkType={Link}>
+        <p className="text-center">
+          <LinkButtonStyled href="/download" text="text-2xl">
             {c('download-allcaps')}
-          </LinkButton>
+          </LinkButtonStyled>
         </p>
       </FeatureBlock>
 
