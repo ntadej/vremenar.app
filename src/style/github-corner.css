@@ -8,6 +8,10 @@
   transform: scale(-1, 1);
 }
 
+.dark .github-corner svg {
+  color: #ffdb4f;
+}
+
 .github-corner svg .octo-arm {
   transform-origin: 130px 106px;
 }

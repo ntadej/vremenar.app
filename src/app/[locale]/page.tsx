@@ -49,13 +49,13 @@ export default function Home() {
   }
 
   return (
-    <div>
-      <div className="grid md:grid-cols-2">
+    <>
+      <div className="grid dark:text-black md:grid-cols-2">
         <section
           className={clsx(
             'flex grow flex-col justify-center',
             'p-12 lg:p-24',
-            'bg-gradient-to-r from-special2 to-special1',
+            'bg-gradient-to-r from-special2 to-special1 dark:from-special1 dark:to-special2',
             'text-right',
           )}
         >
@@ -153,6 +153,6 @@ export default function Home() {
       </FeatureBlock>
 
       <Footer />
-    </div>
+    </>
   )
 }
