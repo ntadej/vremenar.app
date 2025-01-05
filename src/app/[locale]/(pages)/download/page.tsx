@@ -1,7 +1,8 @@
 import { DownloadBlock } from '@/components/downloads'
 import { testingVersion } from '@/constants'
 import { Section } from '@ntadej/style'
-import { useLocale, useTranslations } from 'next-intl'
+import { Locale } from 'next-intl'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Image from 'next/image'
 
 import amazonAppStoreBadge_de from '@/resources/badges/amazon-appstore_de.png'
@@ -25,9 +26,16 @@ import macAppStoreBadge_de from '@/resources/badges/apple-mac-app-store_de.svg'
 import macAppStoreBadge_en from '@/resources/badges/apple-mac-app-store_en.svg'
 import macAppStoreBadge_sl from '@/resources/badges/apple-mac-app-store_sl.svg'
 
-export default function Download() {
-  const locale = useLocale()
-  const t = useTranslations('download')
+export default async function Terms({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>
+}) {
+  const { locale } = await params
+  // Enable static rendering
+  setRequestLocale(locale)
+
+  const t = await getTranslations('download')
 
   const macAppStoreBadge = {
     en: macAppStoreBadge_en,

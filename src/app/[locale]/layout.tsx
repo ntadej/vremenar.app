@@ -7,6 +7,10 @@ import { notFound } from 'next/navigation'
 
 import '@/style/main.css'
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }))
+}
+
 export default async function LocaleLayout({
   children,
   params,

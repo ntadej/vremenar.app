@@ -1,7 +1,17 @@
 import { Link } from '@/i18n/routing'
 import { Content, Section } from '@ntadej/style'
+import { Locale } from 'next-intl'
+import { setRequestLocale } from 'next-intl/server'
 
-export default function License() {
+export default async function License({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>
+}) {
+  const { locale } = await params
+  // Enable static rendering
+  setRequestLocale(locale)
+
   return (
     <Section title="License" subtitle="Copyright &copy; 2025 Tadej Novak">
       <Content fullWidth={true}>
@@ -12,7 +22,7 @@ export default function License() {
           spread the word!
         </p>
 
-        <p>The project is bi - licensed.</p>
+        <p>The project is bi-licensed.</p>
 
         <h2>GNU General Public License Version 3.0</h2>
 

@@ -4,7 +4,8 @@ import Footer from '@/components/footer'
 import { Link } from '@/i18n/routing'
 import { GitHubCorner, LinkButton } from '@ntadej/style'
 import clsx from 'clsx'
-import { useLocale, useTranslations } from 'next-intl'
+import { Locale } from 'next-intl'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Image from 'next/image'
 
 import clouds_en from '@/resources/features/clouds_en.png'
@@ -18,10 +19,17 @@ import style_de from '@/resources/features/style_de.png'
 import style_en from '@/resources/features/style_en.png'
 import style_sl from '@/resources/features/style_sl.png'
 
-export default function Home() {
-  const locale = useLocale()
-  const c = useTranslations('common')
-  const t = useTranslations('features')
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>
+}) {
+  const { locale } = await params
+  // Enable static rendering
+  setRequestLocale(locale)
+
+  const c = await getTranslations('common')
+  const t = await getTranslations('features')
   const feature_width = 752
   const feature_height = 592
 

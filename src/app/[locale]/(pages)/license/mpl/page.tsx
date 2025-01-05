@@ -1,6 +1,16 @@
 import { Content, Section } from '@ntadej/style'
+import { Locale } from 'next-intl'
+import { setRequestLocale } from 'next-intl/server'
 
-export default function License() {
+export default async function License({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>
+}) {
+  const { locale } = await params
+  // Enable static rendering
+  setRequestLocale(locale)
+
   return (
     <Section title="Mozilla Public License" subtitle="Version 2.0">
       <Content fullWidth={true}>

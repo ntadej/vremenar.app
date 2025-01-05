@@ -1,6 +1,16 @@
 import { Content, Section } from '@ntadej/style'
+import { Locale } from 'next-intl'
+import { setRequestLocale } from 'next-intl/server'
 
-export default function License() {
+export default async function License({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>
+}) {
+  const { locale } = await params
+  // Enable static rendering
+  setRequestLocale(locale)
+
   return (
     <Section title="GNU General Public License" subtitle="Version 3, 29 June 2007">
       <Content fullWidth={true}>

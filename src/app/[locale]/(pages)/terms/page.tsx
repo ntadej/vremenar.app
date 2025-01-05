@@ -1,8 +1,17 @@
 import { Content, Section } from '@ntadej/style'
-import { useTranslations } from 'next-intl'
+import { Locale } from 'next-intl'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
-export default function Terms() {
-  const t = useTranslations('terms')
+export default async function Terms({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>
+}) {
+  const { locale } = await params
+  // Enable static rendering
+  setRequestLocale(locale)
+
+  const t = await getTranslations('terms')
 
   return (
     <Section title={t('terms')} subtitle="">
