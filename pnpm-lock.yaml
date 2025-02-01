@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@ntadej/style':
         specifier: github:ntadej/tano-style#main
-        version: https://codeload.github.com/ntadej/tano-style/tar.gz/ee9bba747dadb75acd3d9e66b694a06b4e5869ef
+        version: git+https://git@github.com:ntadej/tano-style.git#ee9bba747dadb75acd3d9e66b694a06b4e5869ef
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -34,8 +34,8 @@ importers:
         specifier: ^0.5.15
         version: 0.5.15(tailwindcss@3.4.17)
       '@types/node':
-        specifier: ^22.10.5
-        version: 22.10.5
+        specifier: ^22.13.0
+        version: 22.13.0
       '@types/react':
         specifier: ^19.0.2
         version: 19.0.2
@@ -379,8 +379,8 @@ packages:
     resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
     engines: {node: '>=12.4.0'}
 
-  '@ntadej/style@https://codeload.github.com/ntadej/tano-style/tar.gz/ee9bba747dadb75acd3d9e66b694a06b4e5869ef':
-    resolution: {tarball: https://codeload.github.com/ntadej/tano-style/tar.gz/ee9bba747dadb75acd3d9e66b694a06b4e5869ef}
+  '@ntadej/style@git+https://git@github.com:ntadej/tano-style.git#ee9bba747dadb75acd3d9e66b694a06b4e5869ef':
+    resolution: {commit: ee9bba747dadb75acd3d9e66b694a06b4e5869ef, repo: git@github.com:ntadej/tano-style.git, type: git}
     version: 0.6.0
 
   '@pkgjs/parseargs@0.11.0':
@@ -456,8 +456,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@22.10.5':
-    resolution: {integrity: sha512-F8Q+SeGimwOo86fiovQh8qiXfFEh2/ocYv7tU5pJ3EXMSSxk1Joj5wefpFK2fHTf/N6HKGSxIDBT9f3gCxXPkQ==}
+  '@types/node@22.13.0':
+    resolution: {integrity: sha512-ClIbNe36lawluuvq3+YYhnIN2CELi+6q8NpnM7PYp4hBn/TatfboPgVSm2rwKRfnV2M+Ty9GWDFI64KEe+kysA==}
 
   '@types/react@19.0.2':
     resolution: {integrity: sha512-USU8ZI/xyKJwFTpjSVIrSeHBVAGagkHQKPNbxeWwql/vDmnTIBgx+TJnhFnj1NXgz8XfprU0egV2dROLGpsBEg==}
@@ -2366,7 +2366,7 @@ snapshots:
 
   '@nolyfill/is-core-module@1.0.39': {}
 
-  '@ntadej/style@https://codeload.github.com/ntadej/tano-style/tar.gz/ee9bba747dadb75acd3d9e66b694a06b4e5869ef':
+  '@ntadej/style@git+https://git@github.com:ntadej/tano-style.git#ee9bba747dadb75acd3d9e66b694a06b4e5869ef':
     dependencies:
       '@headlessui/react': 2.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       clsx: 2.1.1
@@ -2460,7 +2460,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@22.10.5':
+  '@types/node@22.13.0':
     dependencies:
       undici-types: 6.20.0
 
