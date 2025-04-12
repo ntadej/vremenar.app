@@ -18,7 +18,7 @@
   "dependencies": {
     "@ntadej/style": "github:ntadej/tano-style#main",
     "clsx": "^2.1.1",
-    "next": "~15.1.6",
+    "next": "~15.3.0",
     "next-intl": "4.0.0-beta-ddd5ae5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
